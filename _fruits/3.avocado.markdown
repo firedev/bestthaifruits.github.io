@@ -19,6 +19,11 @@ package:
   - "Упаковка: Пакет 500г"
   - "Вес: 80 — 100г"
   - "Поставка: Коробка 15кг (30 пакетов)"
+gallery:
+  - images/avocado/avocado_1.jpg
+  - images/avocado/avocado_2.jpg
+  - images/avocado/avocado_3.jpg
+  - images/avocado/avocado_4.jpg
 ---
 
 * Продукт: АВОКАДО

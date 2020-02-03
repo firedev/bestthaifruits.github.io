@@ -1,0 +1,5 @@
+media_presets:
+  medium: 'min-width: 40rem'
+markup_presets:
+  thumbnail:
+    widths: [400]

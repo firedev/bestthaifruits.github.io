@@ -25,8 +25,7 @@ layout: default
     <div class="p1 md-show"></div>
   </div>
   <div class="p2 mt3 auto">
-    <div class="p1 md-show"></div>
-    <div class="h3 center muted">
+    <div class="md-show h3 center muted pt">
       Пищевая ценность (100г):
     </div>
     <div class="py2 flex flex-wrap justify-center mx-auto">
@@ -69,7 +68,15 @@ layout: default
       <div>
         {{ content }}
       </div>
-
+      <div class="gallery my2">
+        {% for img in page.gallery %}
+        <div class="gallery-item">
+          <div>
+            {% picture thumbnail {{img}} --link %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
     </article>
   </div>
 </div>
