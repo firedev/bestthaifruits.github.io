@@ -137,13 +137,13 @@ a { text-decoration: none; }
 
 /* responsive */
 .md-show { display: none }
-.md-px4 { padding-left: 4rem; padding-right: 4rem; }
-
-h1, .h1 { font-size: 1.75rem }
-h2, .h2 { font-size: 1.5rem }
-h3, .h3 { font-size: 1.25rem }
 
 @media(min-width: 40rem) {
+  h1, .h1 { font-size: 1.75rem }
+  h2, .h2 { font-size: 1.5rem }
+  h3, .h3 { font-size: 1.25rem }
+  .md-px4 { padding-left: 4rem; padding-right: 4rem; }
+
   .md-flex { display: flex }
   .md-flex-column { flex-direction: column }
   .md-show { display: block }
