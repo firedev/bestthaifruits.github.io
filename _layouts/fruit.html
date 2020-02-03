@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+<div class="md-flex container mx-auto bg-white bg-{{page.slug}}-img cover">
+  <div class="px4 py3 md-col-8">
+    <div class="p1 md-show"></div>
+    <div class="h2"><span class="bold uppercase">{{page.name}}</span></div>
+    <div class="">{{page.subtitle}}</div>
+    <br />
+    {% for tag in page.tags %}
+    <div class="bg-{{page.slug}} nowrap p1 mr1 mb1 inline-block">
+      <i class="fa fa-check"></i>
+      {{tag}}
+    </div>
+    {% endfor %}
+    <br />
+    {% for tag in page.package %}
+    <div class="bg-white nowrap p1 mr1 mb1 inline-block">
+      <i class="fa fa-check"></i>
+      {{tag}}
+    </div>
+    <br/>
+    {% endfor %}
+    <div class="p1 md-show"></div>
+  </div>
+  <div class="p2 mt3 auto">
+    <div class="p1 md-show"></div>
+    <div class="h3 center">
+      <span class="bold bg-{{page.slug}}">Пищевая ценность (100г):</span>
+    </div>
+    <div class="py2 flex flex-wrap justify-center mx-auto">
+      <div class="p">
+        <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
+          <span class="small">Калорийность</small>
+          <div class="h3 bold">{{page.nutrition.kcal}}ккал</div>
+        </div>
+      </div>
+      <div class="p">
+        <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
+          <span class="small">Жир</small>
+          <div class="h3 bold">{{page.nutrition.fat}}г</div>
+        </div>
+      </div>
+      <div class="p">
+        <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
+          <span class="small">Углеводы</small>
+          <div class="h3 bold">{{page.nutrition.carbs}}г</div>
+        </div>
+      </div>
+      <div class="p">
+        <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
+          <span class="small">Белок</small>
+          <div class="h3 bold">{{page.nutrition.protein}}г</div>
+        </div>
+      </div>
+      <div class="p1 md-show"></div>
+    </div>
+  </div>
+</div>
+
+<div class="flex container mx-auto">
+  <div class="col col-12 auto bg-white px4">
+    <article>
+      <header>
+        <h1 class="uppercase">{{ page.title | escape }}</h1>
+      </header>
+
+      <div>
+        {{ content }}
+      </div>
+
+    </article>
+  </div>
+</div>
+
+<div class="bg-orange pb mt4"></div>
