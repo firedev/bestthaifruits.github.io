@@ -21,7 +21,7 @@ a { text-decoration: none; }
 
 /* layout */
 .container { max-width: 80rem; }
-.shadow { box-shadow: 0 0 2rem rgba(0,0,0,0.5); }
+.shadow { box-shadow: 0 0 2rem rgba(0,0,0,0.25); }
 .align-center { align-items: center }
 .align-end { align-items: flex-end }
 .center { text-align: center }

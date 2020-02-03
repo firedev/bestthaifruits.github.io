@@ -7,10 +7,10 @@ title: >-
   Премиальные спелые тайские мини-ананасы шоковой заморозки
 permalink: /pineapple
 nutrition:
-  - kcal: 48
-  - fat: 0,1
-  - protein: 0,5
-  - carbs: 11
+  kcal: 48
+  fat: 0,1
+  protein: 0,5
+  carbs: 11
 tags:
   - Заряжен витаминами и антиоксидантами
   - Укрепляет сосуды

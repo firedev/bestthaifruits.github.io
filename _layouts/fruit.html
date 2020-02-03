@@ -13,8 +13,8 @@ layout: default
       <i class="fa fa-check"></i>
       {{tag}}
     </div>
-    {% endfor %}
     <br />
+    {% endfor %}
     {% for tag in page.package %}
     <div class="bg-white nowrap p1 mr1 mb1 inline-block">
       <i class="fa fa-check"></i>
@@ -26,16 +26,10 @@ layout: default
   </div>
   <div class="p2 mt3 auto">
     <div class="p1 md-show"></div>
-    <div class="h3 center">
-      <span class="bold bg-{{page.slug}}">Пищевая ценность (100г):</span>
+    <div class="h3 center muted">
+      Пищевая ценность (100г):
     </div>
     <div class="py2 flex flex-wrap justify-center mx-auto">
-      <div class="p">
-        <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
-          <span class="small">Калорийность</small>
-          <div class="h3 bold">{{page.nutrition.kcal}}ккал</div>
-        </div>
-      </div>
       <div class="p">
         <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
           <span class="small">Жир</small>
@@ -52,6 +46,12 @@ layout: default
         <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
           <span class="small">Белок</small>
           <div class="h3 bold">{{page.nutrition.protein}}г</div>
+        </div>
+      </div>
+      <div class="p">
+        <div class="round bg-{{page.slug}} w4 h4 center shadow flex flex-column justify-center">
+          <span class="small">Калорийность</small>
+          <div class="h3 bold">{{page.nutrition.kcal}}ккал</div>
         </div>
       </div>
       <div class="p1 md-show"></div>
