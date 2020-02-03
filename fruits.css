@@ -83,6 +83,7 @@ a { text-decoration: none; }
 .mt2 { margin-top: 1rem; }
 .mt3 { margin-top: 2rem; }
 .mt4 { margin-top: 4rem; }
+.my2 { margin-top: 1rem; margin-bottom: 1rem; }
 .mx-auto { margin-left: auto; margin-right: auto }
 .p { padding: .25rem; padding: .25rem; }
 .p1 { padding: .5rem; padding: .5rem; }
@@ -113,6 +114,23 @@ a { text-decoration: none; }
 .col-8 { flex: 0 0 66.666%; width: 66.666%; }
 .col-12 { flex: 0 0 100%; width: 100%; }
 .auto { flex: auto; }
+
+/*gallery*/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  max-width: 18rem;
+  max-height: 18rem;
+  width: 25vw;
+  height: 25vw;
+  display: inline-flex;
+  overflow: hidden;
+  align-items: center;
+}
 
 /* decorative */
 .round { border-radius: 999px }
