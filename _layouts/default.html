@@ -32,8 +32,8 @@
     </a>
     {% endfor %}
   </div>
-  <div class="shadow">
-    <div class="pb shadow bg-{{page.slug}}"></div>
+  <div class="container shadow mx-auto">
+    <div class="pb bg-{{page.slug | default: 'orange'}}"></div>
     <!-- menu -->
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -45,16 +45,16 @@
         CПЕЛЫЕ ТАЙСКИЕ ФРУКТЫ
       </div>
       <div>Индивидуальная шоковая заморозка и доставка по всему миру</div>
-    </div>
 
-    <div class="md-flex container mx-auto bg-white">
-      {% for fruit in site.fruits %}
-      <a href="{{ fruit.permalink }}" class="block black col md-col-4 center px2 py4 bg-{{fruit.slug}}-img cover">
-        <div class="h2"><span class="bg-{{fruit.slug}} px bold uppercase">{{ fruit.name }}</span></div>
-        <div><span class="bg-{{fruit.slug}} px">{{ fruit.subtitle }}</span></div>
-        <div class="py4"></div>
-      </a>
-      {% endfor %}
+      <div class="md-flex container mx-auto bg-white">
+        {% for fruit in site.fruits %}
+        <a href="{{ fruit.permalink }}" class="block black col md-col-4 center px2 py4 bg-{{fruit.slug}}-img cover">
+          <div class="h2"><span class="bg-{{fruit.slug}} px bold uppercase">{{ fruit.name }}</span></div>
+          <div><span class="bg-{{fruit.slug}} px">{{ fruit.subtitle }}</span></div>
+          <div class="py4"></div>
+        </a>
+        {% endfor %}
+      </div>
     </div>
 
     <!-- <div class="flex container mx-auto"> -->
@@ -68,51 +68,51 @@
     <!-- </div> -->
 
     <!-- <div class="flex bg-white container mx-auto px1 py4"></div> -->
-    <div class="md-flex bg-white container mx-auto p4">
-      <div class="col col-6 md-flex align-end">
-        <div class="px1 mb2 md-show">
-          <!-- <div class="bg-orange white p2 center extrabold z1 relative" style="line-height: 200%"> -->
-          <!-- <div style="font-size: 40">BEST</div> -->
-          <!-- <div style="font-size: 38">THAI</div> -->
-          <!-- <div style="font-size: 27">FRUITS</div> -->
-          <!-- </div> -->
-          <img src="/images/fruits-logo.svg" class="block" style="height: 6rem"/>
+  </div>
+  <div class="md-flex bg-white container mx-auto p4">
+    <div class="col col-6 md-flex align-end">
+      <div class="px1 mb2 md-show">
+        <!-- <div class="bg-orange white p2 center extrabold z1 relative" style="line-height: 200%"> -->
+        <!-- <div style="font-size: 40">BEST</div> -->
+        <!-- <div style="font-size: 38">THAI</div> -->
+        <!-- <div style="font-size: 27">FRUITS</div> -->
+        <!-- </div> -->
+        <img src="/images/fruits-logo.svg" class="block" style="height: 6rem"/>
+      </div>
+      <div class="px1 mb2">
+        <div>
+          <a class="black flex align-center" href="tel:+7-964-931-3480"><i class="h2 mr1 orange fa fa-phone-square-alt"></i> +7-964-931-3480</a>
         </div>
-        <div class="px1 mb2">
-          <div>
-            <a class="black flex align-center" href="tel:+7-964-931-3480"><i class="h2 mr1 orange fa fa-phone-square-alt"></i> +7-964-931-3480</a>
-          </div>
-          <div>
-            <a class="black flex align-center" href="tel:+669-8460-9515"><i class="h2 mr1 orange fa fa-phone-square-alt"></i> +669-8460-9515</a>
-          </div>
-          <div>
-            <a class="black flex align-center" href="mailto:info@bestthaifruits.com"><i class="h2 mr1 orange fa fa-envelope-square"></i> info@bestthaifruits.com</a>
-          </div>
+        <div>
+          <a class="black flex align-center" href="tel:+669-8460-9515"><i class="h2 mr1 orange fa fa-phone-square-alt"></i> +669-8460-9515</a>
+        </div>
+        <div>
+          <a class="black flex align-center" href="mailto:info@bestthaifruits.com"><i class="h2 mr1 orange fa fa-envelope-square"></i> info@bestthaifruits.com</a>
         </div>
       </div>
-      <div class="col col-6 flex align-end mb2">
-        <div class="px1">
-          <div class="flex align-start">
-            <div class="pt mr1">
-              <i class="h2 fas fa-map-marker-alt orange"></i>
-            </div>
-            <div>
-              <span class="extrabold">NBT Export</span> Co. Ltd.,
-              <br />
-              53/36 Moo 2, Vichit, Muang, Phuket, Thailand 83000
-              <div style="margin-bottom: 20px"></div>
-              <a class="whatsapp-color" href="https://wa.me/79649313480?text=bestthaifruits.com"><i class="mr1 h2 fab fa-whatsapp-square"></i></a>
-              <a class="line-color" href="line://ti/p/bestthaifruits"><i class="h2 fab fa-line"></i></a>
-            </div>
+    </div>
+    <div class="col col-6 flex align-end mb2">
+      <div class="px1">
+        <div class="flex align-start">
+          <div class="pt mr1">
+            <i class="h2 fas fa-map-marker-alt orange"></i>
+          </div>
+          <div>
+            <span class="extrabold">NBT Export</span> Co. Ltd.,
+            <br />
+            53/36 Moo 2, Vichit, Muang, Phuket, Thailand 83000
+            <div style="margin-bottom: 20px"></div>
+            <a class="whatsapp-color" href="https://wa.me/79649313480?text=bestthaifruits.com"><i class="mr1 h2 fab fa-whatsapp-square"></i></a>
+            <a class="line-color" href="line://ti/p/bestthaifruits"><i class="h2 fab fa-line"></i></a>
           </div>
         </div>
       </div>
     </div>
   </div>
   <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/js/jquery.swipebox.min.js"></script>
   <script type="text/javascript">
     ;( function( $ ) { $( '.swipebox' ).swipebox(); } )( jQuery );
