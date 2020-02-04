@@ -3,8 +3,8 @@
 body { min-height: 100%; margin: 0; padding: 0; font-family: "Open Sans", sans-serif; }
 /* html, body { background-image: linear-gradient(#5ccaf3, #d7f0fe); } */
 body { xbackground: url(/images/body.svg) bottom center no-repeat; background-size: cover; }
-h1, .h1 { font-size: 3rem }
-h2, .h2 { font-size: 2rem }
+h1, .h1 { font-size: 1.75rem }
+h2, .h2 { font-size: 1.5rem }
 h3, .h3 { font-size: 1.25rem }
 img { max-width: 100% }
 a { text-decoration: none; }
@@ -106,13 +106,13 @@ a { text-decoration: none; }
 .h4 { height: 6rem; }
 
 /* grid */
-.col-1 { flex: 0 0 8.333%; width: 8.333%; }
-.col-2 { flex: 0 0 16.666%; width: 16.666%; }
-.col-3 { flex: 0 0 25%; width: 25%; }
-.col-4 { flex: 0 0 33.333%; width: 33.333%; }
-.col-6 { flex: 0 0 50%; width: 50%; }
-.col-8 { flex: 0 0 66.666%; width: 66.666%; }
-.col-12 { flex: 0 0 100%; width: 100%; }
+.col-1 { flex: 0 0 8.333%; }
+.col-2 { flex: 0 0 16.666%; }
+.col-3 { flex: 0 0 25%; }
+.col-4 { flex: 0 0 33.333%; }
+.col-6 { flex: 0 0 50%; }
+.col-8 { flex: 0 0 66.666%; }
+.col-12 { flex: 0 0 100%; }
 .auto { flex: auto; }
 
 /*gallery*/
@@ -139,13 +139,18 @@ a { text-decoration: none; }
 .md-show { display: none }
 
 @media(min-width: 40rem) {
+  h1, .h1 { font-size: 3rem }
+  h2, .h2 { font-size: 2rem }
+  h3, .h3 { font-size: 1.25rem }
+
+  .md-px4 { padding-left: 4rem; padding-right: 4rem; }
   .md-flex { display: flex }
   .md-flex-column { flex-direction: column }
   .md-show { display: block }
-  .md-col-1 { flex: 0 0 8.333%; width: 8.333%; }
-  .md-col-2 { flex: 0 0 16.666%; width: 16.666%; }
-  .md-col-3 { flex: 0 0 25%; width: 25%; }
-  .md-col-4 { flex: 0 0 33.333%; width: 33.333%; }
+  .md-col-1 { flex: 0 0 8.333%; }
+  .md-col-2 { flex: 0 0 16.666%; }
+  .md-col-3 { flex: 0 0 25%; }
+  .md-col-4 { flex: 0 0 33.333%; }
   .md-col-6 { flex: 0 0 50%; width: 50%; }
   .md-col-8 { flex: 0 0 66.666%; width: 66.666%; }
   .md-col-12 { flex: 0 0 100%; width: 100%; }
