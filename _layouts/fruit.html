@@ -72,7 +72,9 @@ layout: default
         {% for img in page.gallery %}
         <div class="gallery-item">
           <div>
-            {% picture thumbnail {{img}} --link %}
+            <a href="{{img}}" class="swipebox" class="swipebox">
+              {% picture thumbnail {{img}} %}
+            </a>
           </div>
         </div>
         {% endfor %}

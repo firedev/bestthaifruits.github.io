@@ -125,8 +125,7 @@ a { text-decoration: none; }
 .gallery-item {
   max-width: 18rem;
   max-height: 18rem;
-  width: 25vw;
-  height: 25vw;
+  width: 50%;
   display: inline-flex;
   overflow: hidden;
   align-items: center;
