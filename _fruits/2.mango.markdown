@@ -16,14 +16,16 @@ tags:
   - Природный антидепрессант
   - Высокое содержание витаминов
 package:
-  - "Упаковка: Пакет 500г (4 — 6 половинок)"
   - "Вес: 80 — 120г"
+  - "Упаковка: Пакет 500г (4 — 6 половинок)"
   - "Поставка: Коробка 15кг (30 пакетов)"
 gallery:
   - images/mango/mango_1.jpg
   - images/mango/mango_2.jpg
   - images/mango/mango_3.jpg
   - images/mango/mango_4.jpg
+  - images/mango/mango_5.jpg
+  - images/mango/mango_6.jpg
 ---
 
 * Продукт: МАНГО ЖЕЛТОЕ
