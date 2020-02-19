@@ -1,0 +1,12 @@
+-
+  en: en.index.markdown
+  ru: ru.index.markdown
+-
+  en: _fruits/1.en.pineapple.markdown
+  ru: _fruits/1.ru.pineapple.markdown
+-
+  en: _fruits/2.en.mango.markdown
+  ru: _fruits/2.ru.mango.markdown
+-
+  en: _fruits/3.en.avocado.markdown
+  ru: _fruits/3.ru.avocado.markdown

@@ -1,0 +1,30 @@
+{% assign all_pages = site.posts | concat: site.pages | concat: site.fruits %}
+<nav>
+  {% for block in site.data.map %}
+    {% for item in block[page.lang] %}
+      {% if item == page.path %}
+        {% for trans in block %}
+          {% assign trans_path = trans[1] %}
+          {% assign pages = all_pages | where: "path", trans_path %}
+
+          {% for item in pages %}
+            {% if item.path == page.path %}
+              {% assign class_name = "" %}
+            {% else %}
+              {% assign class_name = "muted" %}
+            {% endif %}
+            <a
+              hreflang="{{item.lang}}"
+              href="{{item.url | absolute_url}}"
+              class="p inline-flex align-center black {{ class_name }}"
+              title="{{site.data.locales[item.lang].title}}"
+              >
+              <img src="/images/flags/{{item.lang}}.svg" class="flag shadow" />
+            </a>
+          {% endfor %}
+
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</nav>

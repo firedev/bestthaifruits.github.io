@@ -26,31 +26,47 @@ layout: default
   </div>
   <div class="p2 mt3 auto">
     <div class="md-show h3 center muted pt">
-      Пищевая ценность (100г):
+      {{ site.t[page.lang].nutrition.info }}
     </div>
     <div class="py2 flex flex-wrap justify-center mx-auto">
       <div class="p">
         <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
-          <span class="small">Жир</small>
-          <div class="h3 bold">{{page.nutrition.fat}}г</div>
+          <span class="small pt1">
+            {{ site.t[page.lang].nutrition.fat }}
+          </span>
+          <div class="h3 bold">
+            {{page.nutrition.fat}}{{ site.t[page.lang].nutrition.g }}
+          </div>
         </div>
       </div>
       <div class="p">
         <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
-          <span class="small">Углеводы</small>
-          <div class="h3 bold">{{page.nutrition.carbs}}г</div>
+          <span class="small pt1">
+            {{ site.t[page.lang].nutrition.carbs }}
+          </span>
+          <div class="h3 bold">
+            {{page.nutrition.carbs}}{{ site.t[page.lang].nutrition.g }}
+          </div>
         </div>
       </div>
       <div class="p">
         <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
-          <span class="small">Белок</small>
-          <div class="h3 bold">{{page.nutrition.protein}}г</div>
+          <span class="small pt1">
+            {{ site.t[page.lang].nutrition.protein }}
+          </span>
+          <div class="h3 bold">
+            {{page.nutrition.protein}}{{ site.t[page.lang].nutrition.g }}
+          </div>
         </div>
       </div>
       <div class="p">
         <div class="round bg-{{page.slug}} w4 h4 center shadow flex flex-column justify-center">
-          <span class="small">Калорийность</small>
-          <div class="h3 bold">{{page.nutrition.kcal}}ккал</div>
+          <span class="small pt1">
+            {{ site.t[page.lang].nutrition.calories }}
+          </span>
+          <div class="h3 bold">
+            {{page.nutrition.kcal}}{{ site.t[page.lang].nutrition.kcal }}
+          </div>
         </div>
       </div>
       <div class="p1 md-show"></div>
@@ -63,7 +79,7 @@ layout: default
   <div class="col col-12 auto bg-white px2 md-px4">
     <article>
       <header>
-        <h1 class="uppercase">{{ page.title | escape }}</h1>
+        <h1 class="h1 bold uppercase">{{ page.title | escape }}</h1>
       </header>
 
       <div>
