@@ -2,9 +2,9 @@
 lang: ru
 layout: fruit
 slug: pineapple
-name: Мини-ананас
+title: Мини-ананас
 subtitle: Король тропических фруктов
-title: >-
+description: >-
   Премиальные спелые тайские мини-ананасы шоковой заморозки
 permalink: /ru/pineapple
 nutrition:

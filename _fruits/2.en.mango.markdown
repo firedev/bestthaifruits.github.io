@@ -2,9 +2,9 @@
 lang: en
 layout: fruit
 slug: mango
-name: Mango Nam Dok Mai
+title: Mango Nam Dok Mai
 subtitle: The most delicate and delicious variety
-title: >-
+description: >-
   Premium Ripe Individually Quick Frozen Thai Mango Nam Dok Mai
 permalink: /mango
 nutrition:

@@ -3,6 +3,7 @@
 body { min-height: 100%; margin: 0; padding: 0; font-family: "Open Sans", sans-serif; }
 /* html, body { background-image: linear-gradient(#5ccaf3, #d7f0fe); } */
 body { xbackground: url(/images/body.svg) bottom center no-repeat; background-size: cover; }
+h1, h2, h3 { margin-top: 2rem }
 h1, .h1 { font-size: 1.75rem }
 h2, .h2 { font-size: 1.5rem }
 h3, .h3 { font-size: 1.25rem }
@@ -58,7 +59,7 @@ a { text-decoration: none; }
 .bg-avocado-img { background-image: url(/images/avocado.jpg) }
 .bg-mango { background-color: #fdc629; }
 .bg-mango-img { background-image: url(/images/mango.jpg) }
-.bg-pineapple { background-color: #FFDE51;  }
+.bg-pineapple { background-color: #FFDE51; }
 .bg-pineapple-img { background-image: url(/images/pineapple.jpg) }
 .bg-navy { background-color: #3c6eae; }
 
@@ -80,7 +81,6 @@ a { text-decoration: none; }
 .ratio-1x1 { flex: 1 }
 .z1 { z-index: 1 }
 .cover { background-size: cover; background-position: center center }
-.icon { width: 3.5rem; height: 3.5rem; display: block; }
 .whatsapp { background-image: url(whatsapp.svg); }
 .line { background-image: url(line.svg); }
 .contacts { top: 100%; left: 0; right: 0; width: 100%; }
@@ -112,6 +112,7 @@ a { text-decoration: none; }
 .py3 { padding-top: 2rem; padding-bottom: 2rem; }
 .pb { padding-bottom: .25rem; }
 .pb1 { padding-bottom: .5rem; }
+.pb4 { padding-bottom: 4rem; }
 .py2 { padding-top: 1rem; padding-bottom: 1rem; }
 .py4 { padding-top: 4rem; padding-bottom: 4rem; }
 .w4 { width: 6rem; }
@@ -143,21 +144,22 @@ a { text-decoration: none; }
   align-items: center;
 }
 
-/* flags */
-.flag {
-  height: 1rem;
-}
-
 /* decorative */
 .round { border-radius: 999px }
 
 /* responsive */
 .md-show { display: none }
+/* flags */
+.flag { height: 1.5rem; }
+.icon { font-size: 2em; }
 
 @media(min-width: 40rem) {
   h1, .h1 { font-size: 3rem }
   h2, .h2 { font-size: 2rem }
   h3, .h3 { font-size: 1.25rem }
+
+  .flag { height: 1rem; }
+  .icon { font-size: 2rem; }
 
   .md-px4 { padding-left: 4rem; padding-right: 4rem; }
   .md-flex { display: flex }

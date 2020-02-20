@@ -2,6 +2,9 @@
   en: en.index.markdown
   ru: ru.index.markdown
 -
+  en: en.about.markdown
+  ru: ru.about.markdown
+-
   en: _fruits/1.en.pineapple.markdown
   ru: _fruits/1.ru.pineapple.markdown
 -

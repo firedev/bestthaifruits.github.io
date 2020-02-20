@@ -2,9 +2,9 @@
 lang: ru
 layout: fruit
 slug: avocado
-name: Тайское авокадо
+title: Тайское авокадо
 subtitle: Спелые мягкие плоды каждый день
-title: >-
+description: >-
   Премиальные спелые Тайские Авокадо шоковой заморозки
 permalink: /ru/avocado
 nutrition:

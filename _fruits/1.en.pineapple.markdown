@@ -2,9 +2,9 @@
 lang: en
 layout: fruit
 slug: pineapple
-name: Mini Pineapple
+title: Mini Pineapple
 subtitle: The King of Tropical Fruits
-title: >-
+description: >-
   Premium Ripe Individually Quick Frozen Thai Mini-Pineapple
 permalink: /pineapple
 nutrition:

@@ -2,9 +2,9 @@
 lang: ru
 layout: fruit
 slug: mango
-name: Манго Нам Док Май
+title: Манго Нам Док Май
 subtitle: Самый нежный и вкусный сорт
-title: >-
+description: >-
   Премиальные спелые Тайские Манго сорта Нам Док Май шоковой заморозки
 permalink: /ru/mango
 nutrition:

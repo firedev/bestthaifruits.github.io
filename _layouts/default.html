@@ -5,7 +5,7 @@
     <title>{{ page.title }}{% if page.title %} | {% endif %}{{ site.t[page.lang].title }}</title>
     <meta name="google-site-verification" content="f-YEKvNR-QK5_3QE44BbQeOhW_QQA9Z2jwDklmw7Hds" />
     <meta name="viewport" content="width=450">
-    <meta name="description" content="{{ site.t[page.lang].description }}"/>
+    <meta name="description" content="{{ page.description | default: site.t[page.lang].description }}"/>
     {% include alternate.html %}
     <link href="/fruits.css?{{ page.date | date: "%Y-%m-%d" }}" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap&subset=cyrillic" rel="stylesheet">
@@ -26,19 +26,22 @@
   </div>
   <nav>
     <div class="container justify-center flex align-end mx-auto pt2">
-      {% assign pages = site.fruits | where:"lang", page.lang %}
-      {% for fruit in pages %}
-      <a href="{{ fruit.permalink }}"
-         class="
-                uppercase h3 px2 py1 black
-                {% if page.url == fruit.permalink %}
-                bg-{{fruit.slug}} bold
-                {% else %}
-                muted
-                {% endif %}
-                ">
-        {{ fruit.name }}
-      </a>
+      {% assign pages = site.fruits | concat: site.pages %}
+      {% assign pages = pages | where: "lang", page.lang %}
+      {% for p in pages %}
+        {% if p.title %}
+          <a href="{{ p.permalink }}"
+             class="
+                    uppercase h3 px2 py1 black
+                    {% if p.url == page.permalink %}
+                      bg-{{p.slug | default: 'orange' }} bold
+                    {% else %}
+                      muted
+                    {% endif %}
+                    ">
+            {{ p.title }}
+          </a>
+        {% endif %}
       {% endfor %}
     </div>
   </nav>
@@ -63,35 +66,18 @@
     <div class="md-flex container mx-auto bg-white">
       {% assign pages = site.fruits | where:"lang", page.lang %}
       {% for fruit in pages %}
-      <a href="{{ fruit.permalink }}" class="block black col md-col-4 center px2 py4 bg-{{fruit.slug}}-img cover">
-        <div class="h2"><span class="bg-{{fruit.slug}} px bold uppercase">{{ fruit.name }}</span></div>
-        <div><span class="bg-{{fruit.slug}} px">{{ fruit.subtitle }}</span></div>
-        <div class="py4"></div>
-      </a>
+        <a href="{{ fruit.permalink }}" class="block black col md-col-4 center px2 py4 bg-{{fruit.slug}}-img cover">
+          <div class="h2"><span class="bg-{{fruit.slug}} px bold uppercase">{{ fruit.title }}</span></div>
+          <div><span class="bg-{{fruit.slug}} px">{{ fruit.subtitle }}</span></div>
+          <div class="py4"></div>
+        </a>
       {% endfor %}
     </div>
   </div>
 
-  <!-- <div class="flex container mx-auto"> -->
-  <!-- <div class="col col-4 bg-navy"> -->
-  <!-- <img src="/images/thailand.svg" /> -->
-  <!-- </div> -->
-  <!-- <div class="col auto bg-white px2"> -->
-  <!-- <h2>Свое производство</h2> -->
-  <!-- <p>Поставляем фрукты с собственной фермы на севере Таиланда в Чианг Рае.</p> -->
-  <!-- </div> -->
-  <!-- </div> -->
-
-  <!-- <div class="flex bg-white container mx-auto px1 py4"></div> -->
-  </div>
   <div class="md-flex bg-white container mx-auto p4">
     <div class="col col-6 md-flex align-end">
       <div class="px1 mb2 md-show">
-        <!-- <div class="bg-orange white p2 center extrabold z1 relative" style="line-height: 200%"> -->
-        <!-- <div style="font-size: 40">BEST</div> -->
-        <!-- <div style="font-size: 38">THAI</div> -->
-        <!-- <div style="font-size: 27">FRUITS</div> -->
-        <!-- </div> -->
         <img src="/images/fruits-logo.svg" class="block" style="height: 6rem"/>
       </div>
       <div class="px1 mb2">
@@ -117,8 +103,8 @@
             <br />
             53/36 Moo 2, Vichit, Muang, Phuket, Thailand 83000
             <div style="margin-bottom: 20px"></div>
-            <a class="whatsapp-color" href="https://wa.me/79649313480?text=bestthaifruits.com"><i class="mr1 h2 fab fa-whatsapp-square"></i></a>
-            <a class="line-color" href="line://ti/p/bestthaifruits"><i class="h2 fab fa-line"></i></a>
+            <a class="whatsapp-color" href="https://wa.me/79649313480?text=bestthaifruits.com"><i class="mr1 h2 icon fab fa-whatsapp-square"></i></a>
+            <a class="line-color" href="line://ti/p/bestthaifruits"><i class="h2 icon fab fa-line"></i></a>
           </div>
         </div>
       </div>

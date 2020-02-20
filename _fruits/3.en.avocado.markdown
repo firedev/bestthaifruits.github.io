@@ -2,9 +2,9 @@
 lang: en
 layout: fruit
 slug: avocado
-name: Thai Avocado
+title: Thai Avocado
 subtitle: Ripe soft fruits every day
-title: >-
+description: >-
   Premium Ripe Individually Quick Frozen Thai Avocado
 permalink: /avocado
 nutrition:
