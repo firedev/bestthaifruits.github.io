@@ -3,6 +3,7 @@ lang: ru
 permalink: /ru/about
 layout: about
 title: О нас
+slug: light-orange
 ---
 
 {: .bold }

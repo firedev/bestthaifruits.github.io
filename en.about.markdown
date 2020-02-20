@@ -3,6 +3,7 @@ lang: en
 permalink: /about
 layout: about
 title: About us
+slug: light-orange
 ---
 
 {: .bold }
