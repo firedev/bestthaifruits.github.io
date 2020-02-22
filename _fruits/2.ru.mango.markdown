@@ -21,12 +21,12 @@ package:
   - "Упаковка: Пакет 500г (4 — 6 половинок)"
   - "Поставка: Коробка 15кг (30 пакетов)"
 gallery:
-  - images/mango/mango_1.jpg
-  - images/mango/mango_2.jpg
-  - images/mango/mango_3.jpg
-  - images/mango/mango_4.jpg
-  - images/mango/mango_5.jpg
-  - images/mango/mango_6.jpg
+  - /images/mango/mango_1.jpg
+  - /images/mango/mango_2.jpg
+  - /images/mango/mango_3.jpg
+  - /images/mango/mango_4.jpg
+  - /images/mango/mango_5.jpg
+  - /images/mango/mango_6.jpg
 ---
 
 ## Тот самый “Тайский Манго”, привезти который просят друзей, отдыхающих в Таиланде.

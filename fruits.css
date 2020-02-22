@@ -148,6 +148,9 @@ a { text-decoration: none; }
 /* decorative */
 .round { border-radius: 999px }
 
+/* menu */
+.menu { letter-spacing: -1px }
+
 /* responsive */
 .md-show { display: none }
 /* flags */
@@ -162,6 +165,7 @@ a { text-decoration: none; }
   .flag { height: 1rem; }
   .icon { font-size: 2rem; }
 
+  .md-px2 { padding-left: 2rem; padding-right: 2rem; }
   .md-px4 { padding-left: 4rem; padding-right: 4rem; }
   .md-py3 { padding-top: 2rem; padding-bottom: 2rem; }
   .md-py4 { padding-top: 4rem; padding-bottom: 4rem; }

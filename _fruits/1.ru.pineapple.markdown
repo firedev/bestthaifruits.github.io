@@ -21,12 +21,12 @@ package:
   - "Упаковка: Пакет 500г (6 — 8 штук)"
   - "Поставка: Коробка 12кг (24 пакета)"
 gallery:
-  - images/pineapple/pineapple_1.jpg
-  - images/pineapple/pineapple_2.jpg
-  - images/pineapple/pineapple_3.jpg
-  - images/pineapple/pineapple_4.jpg
-  - images/pineapple/pineapple_5.jpg
-  - images/pineapple/pineapple_6.jpg
+  - /images/pineapple/pineapple_1.jpg
+  - /images/pineapple/pineapple_2.jpg
+  - /images/pineapple/pineapple_3.jpg
+  - /images/pineapple/pineapple_4.jpg
+  - /images/pineapple/pineapple_5.jpg
+  - /images/pineapple/pineapple_6.jpg
 ---
 
 ## Премиальный сорт сладких Тайских мини-ананасов - Пуле (Phulae). Сладкий, спелый и не разъедает рот.

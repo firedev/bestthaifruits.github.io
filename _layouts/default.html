@@ -31,8 +31,8 @@
       {% for p in pages %}
         {% if p.title %}
           <a href="{{ p.permalink }}"
-             class="
-                    uppercase h3 px2 py1 black
+             class="menu
+                    uppercase h3 px1 md-px2 py1 black
                     {% if p.url == page.permalink %}
                       bg-{{p.slug | default: 'orange' }} bold
                     {% else %}

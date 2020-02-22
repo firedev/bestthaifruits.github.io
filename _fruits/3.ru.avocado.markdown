@@ -21,10 +21,10 @@ package:
   - "Упаковка: Пакет 500г (5 &ndash; 6 половинок)"
   - "Поставка: Коробка 15кг (30 пакетов)"
 gallery:
-  - images/avocado/avocado_1.jpg
-  - images/avocado/avocado_2.jpg
-  - images/avocado/avocado_3.jpg
-  - images/avocado/avocado_4.jpg
+  - /images/avocado/avocado_1.jpg
+  - /images/avocado/avocado_2.jpg
+  - /images/avocado/avocado_3.jpg
+  - /images/avocado/avocado_4.jpg
 ---
 
 ## Мы поставляем отборные спелые проды, достаточно только разморозить.

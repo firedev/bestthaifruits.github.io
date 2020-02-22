@@ -21,12 +21,12 @@ package:
   - "Packing: Vacuum Bag 500г (4 &ndash; 6 halves)"
   - "Shipping: Carton 15kg (30 Bags)"
 gallery:
-  - images/mango/mango_1.jpg
-  - images/mango/mango_2.jpg
-  - images/mango/mango_3.jpg
-  - images/mango/mango_4.jpg
-  - images/mango/mango_5.jpg
-  - images/mango/mango_6.jpg
+  - /images/mango/mango_1.jpg
+  - /images/mango/mango_2.jpg
+  - /images/mango/mango_3.jpg
+  - /images/mango/mango_4.jpg
+  - /images/mango/mango_5.jpg
+  - /images/mango/mango_6.jpg
 ---
 
 ## The very “Thai Mango”, that is brought back by friends vacationing in Thailand.

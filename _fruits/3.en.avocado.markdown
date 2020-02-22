@@ -21,10 +21,10 @@ package:
   - "Packing: Vacuum Bag 500г (5 &ndash; 6 halves)"
   - "Shipping: Carton 15kg (30 Bags)"
 gallery:
-  - images/avocado/avocado_1.jpg
-  - images/avocado/avocado_2.jpg
-  - images/avocado/avocado_3.jpg
-  - images/avocado/avocado_4.jpg
+  - /images/avocado/avocado_1.jpg
+  - /images/avocado/avocado_2.jpg
+  - /images/avocado/avocado_3.jpg
+  - /images/avocado/avocado_4.jpg
 ---
 
 ## We supply selected ripe fruits, just defrost.
