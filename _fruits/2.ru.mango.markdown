@@ -9,8 +9,8 @@ description: >-
 permalink: /ru/mango
 nutrition:
   kcal: 65
-  fat: 0,1
-  protein: 0,5
+  fat: "0,3"
+  protein: "0,5"
   carbs: 17
 tags:
   - Идеальный диетический продукт

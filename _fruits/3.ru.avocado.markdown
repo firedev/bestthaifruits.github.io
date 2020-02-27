@@ -10,7 +10,7 @@ permalink: /ru/avocado
 nutrition:
   kcal: 227
   fat: 21
-  protein: 2,7
+  protein: "2,7"
   carbs: 12
 tags:
   - Богато витаминами и минералами

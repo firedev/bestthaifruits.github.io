@@ -8,10 +8,10 @@ description: >-
   Premium Ripe Individually Quick Frozen Thai Mini-Pineapple
 permalink: /pineapple
 nutrition:
-  kcal: 48
-  fat: 0,1
-  protein: 0,5
-  carbs: 11
+  kcal: 50
+  fat: "0,1"
+  protein: "0,5"
+  carbs: 13
 tags:
   - Loaded with vitamins and antioxidants
   - Strengthens blood vessels
@@ -48,10 +48,10 @@ on the table with any diet!
 
 ## NUTRITION FACTS PER 100G
 
-* Calories – 48,1 kCal
+* Calories – 50 kCal
 * Fat – 0,1 g
 * Protein – 0,5 g
-* Carbohydrate – 11,3 g
+* Carbohydrate – 13 g
 * Sodium – 1,0 g
 
 ## PACKING:
