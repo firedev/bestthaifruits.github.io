@@ -64,6 +64,11 @@ a { text-decoration: none; }
 .bg-pineapple-img { background-image: url(/images/pineapple.jpg) }
 .bg-navy { background-color: #3c6eae; }
 
+/* borders */
+.border { border: transparent 1px solid }
+.border-orange { border-color: #ff3300 }
+.border1 { border-width: 0.25rem }
+
 /* position */
 .relative { position: relative }
 .absolute { position: absolute }
