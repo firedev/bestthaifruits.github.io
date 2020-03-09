@@ -23,6 +23,7 @@ defaults:
 t:
   en:
     title: Best Thai Fruits
+    unavailable: Temporary<br>Unavailable
     description: >-
       Premium Ripe Thai Fruits: Mini-Pineapple Phulae, Mango Nam Dok Mai and Avocado.
       Individual Quick Freezing and Delivery Around the World
@@ -39,6 +40,7 @@ t:
       kcal: kCal
   ru:
     title: Лучшие Тайские Фрукты
+    unavailable: Временно недоступно
     description: >-
       Премиальные Cпелые Тайские Фрукты: Мини-Анансы Пуле, Манго Нам Док Май и Авокадо. Индивидуальная шоковая
       заморозка и доставка по всему миру

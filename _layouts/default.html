@@ -70,12 +70,13 @@
       </div>
     </div>
 
-    <div class="md-flex container mx-auto bg-white">
+    <div class="md-flex container mx-auto bg-white relative">
       {% assign pages = site.fruits | where:"lang", page.lang %}
       {% for fruit in pages %}
         <a href="{{ fruit.permalink }}" class="block black col md-col-4 center px2 py4 bg-{{fruit.slug}}-img cover">
           <div class="h2"><span class="bg-{{fruit.slug}} px bold uppercase">{{ fruit.title }}</span></div>
           <div><span class="bg-{{fruit.slug}} px">{{ fruit.subtitle }}</span></div>
+          {% include unavailable.html %}
           <div class="py4"></div>
         </a>
       {% endfor %}

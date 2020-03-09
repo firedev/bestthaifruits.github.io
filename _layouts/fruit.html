@@ -3,7 +3,8 @@ layout: default
 ---
 
 <div class="md-flex relative container mx-auto bg-white bg-{{page.slug}}-img cover">
-  <div class="px2 md-px4 py3 md-col-8">
+  {% assign fruit = page %}
+  <div class="px2 md-px4 py3 md-col-8 relative">
     <div class="p1 md-show"></div>
     <div class="h2"><span class="bold uppercase">{{page.title}}</span></div>
     <div class="">{{page.subtitle}}</div>
@@ -76,12 +77,14 @@ layout: default
 </div>
 
 <div class="flex container mx-auto">
-  <div class="col col-12 auto bg-white px2 md-px4 py3">
+  <div class="col col-12 auto bg-white px2 md-px4 py3 relative">
+    <div class="absolute" style="right: 10rem; top: -2rem;">
+    {% include unavailable.html %}
+    </div>
     <article>
       <header>
         <h1 class="h1 bold uppercase">{{ page.title | escape }}</h1>
       </header>
-
       <div>
         {{ content }}
       </div>

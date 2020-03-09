@@ -1,4 +1,5 @@
 ---
+unavailable: true
 lang: ru
 layout: fruit
 slug: avocado
