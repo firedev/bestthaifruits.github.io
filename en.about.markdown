@@ -7,7 +7,7 @@ slug: light-orange
 ---
 
 {: .bold }
-# NBT Export Co. Ltd.
+# Best Thai Fruit Co. Ltd.
 
 ## One of the leading manufacturers and exporters of premium frozen fruits in Thailand.
 
