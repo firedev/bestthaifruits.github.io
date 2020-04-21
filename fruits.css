@@ -60,6 +60,8 @@ a { text-decoration: none; }
 .bg-avocado-img { background-image: url(/images/avocado.jpg) }
 .bg-mango { background-color: #fdc629; }
 .bg-mango-img { background-image: url(/images/mango.jpg) }
+.bg-passionfruit { background-color: #EFC5CF }
+.bg-passionfruit-img { background-image: url(/images/passionfruit.jpg) }
 .bg-pineapple { background-color: #FFDE51; }
 .bg-pineapple-img { background-image: url(/images/pineapple.jpg) }
 .bg-navy { background-color: #3c6eae; }
@@ -135,21 +137,12 @@ a { text-decoration: none; }
 .auto { flex: auto; }
 
 /*gallery*/
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.crop-to-fit img {
+  width: 9rem;
+  height: 9rem;
+  object-fit: cover;
+  object-position: center top;
 }
-
-.gallery-item {
-  max-width: 18rem;
-  max-height: 18rem;
-  width: 50%;
-  display: inline-flex;
-  overflow: hidden;
-  align-items: center;
-}
-
 /* decorative */
 .round { border-radius: 999px }
 
@@ -167,6 +160,10 @@ a { text-decoration: none; }
   h2, .h2 { font-size: 2rem }
   h3, .h3 { font-size: 1.25rem }
 
+.crop-to-fit img {
+  width: 18rem;
+  height: 18rem;
+}
   .flag { height: 1rem; }
   .icon { font-size: 2rem; }
 
