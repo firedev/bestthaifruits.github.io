@@ -8,7 +8,7 @@ h1, .h1 { font-size: 1.75rem }
 h2, .h2 { font-size: 1.5rem }
 h3, .h3 { font-size: 1.25rem }
 img { max-width: 100% }
-a { text-decoration: none; }
+a { text-decoration: none; color: #ff3300; }
 
 /*typography*/
 .lh-double { line-height: 200%; }
