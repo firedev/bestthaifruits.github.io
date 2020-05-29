@@ -16,7 +16,7 @@ a { text-decoration: none; color: #ff3300; }
 .body { font-size: 1rem }
 .regular { font-weight: 400; }
 .bold { font-weight: 700; }
-.extrabold {font-weight: 800 }
+.extrabold {font-weight: 900 }
 .small { font-size: .75rem; }
 .uppercase { text-transform: uppercase; }
 .normal { font-weight: normal }
@@ -60,16 +60,22 @@ a { text-decoration: none; color: #ff3300; }
 .bg-avocado-img { background-image: url(/images/avocado.jpg) }
 .bg-mango { background-color: #fdc629; }
 .bg-mango-img { background-image: url(/images/mango.jpg) }
-.bg-passionfruit { background-color: #EFC5CF }
-.bg-passionfruit-img { background-image: url(/images/passionfruit.jpg) }
+.bg-mango-puree { background-color: #fdc629; }
+.bg-mango-puree-img { background-image: url(/images/mango-puree.jpg) }
+.bg-passion-fruit { background-color: #EFC5CF }
+.bg-passion-fruit-img { background-image: url(/images/passion-fruit.jpg) }
 .bg-pineapple { background-color: #FFDE51; }
 .bg-pineapple-img { background-image: url(/images/pineapple.jpg) }
 .bg-navy { background-color: #3c6eae; }
+
+.mango-puree .title span { background-color: #fdc629; padding: 0 .25rem; margin: 0 -0.25rem;}
+.mango-puree .subtitle span { background-color: #fdc629; padding: 0.25rem; margin: 0 -0.25rem; }
 
 /* borders */
 .border { border: transparent 1px solid }
 .border-orange { border-color: #ff3300 }
 .border1 { border-width: 0.25rem }
+.rounded { border-radius: 0.5rem }
 
 /* position */
 .relative { position: relative }
@@ -99,15 +105,22 @@ a { text-decoration: none; color: #ff3300; }
 .mr1 { margin-right: .5rem }
 .mr2 { margin-right: 1rem }
 .mt2 { margin-top: 1rem; }
+.mtn2 { margin-top: -1rem; }
 .mt3 { margin-top: 2rem; }
+.mtn3 { margin-top: -2rem; }
 .mt4 { margin-top: 4rem; }
 .my2 { margin-top: 1rem; margin-bottom: 1rem; }
+.my4 { margin-top: 4rem; margin-bottom: 4rem; }
 .mx-auto { margin-left: auto; margin-right: auto }
+.mxn4 { margin-left: -4rem; margin-right: -4rem; }
 .p { padding: .25rem; padding: .25rem; }
 .p1 { padding: .5rem; padding: .5rem; }
 .p2 { padding: 1rem }
 .p4 { padding: 4rem; padding: 4rem; }
 .pr { padding-right: 0.25rem; }
+.pr2 { padding-right: 1rem; }
+.pr4 { padding-right: 4rem; }
+.pl4 { padding-left: 4rem; }
 .pt { padding-top: 0.25rem; }
 .pt1 { padding-top: .5rem; }
 .pt2 { padding-top: 1rem; }
@@ -115,6 +128,7 @@ a { text-decoration: none; color: #ff3300; }
 .px { padding-left: .25rem; padding-right: .25rem; }
 .px1 { padding-left: .5rem; padding-right: .5rem; }
 .px2 { padding-left: 1rem; padding-right: 1rem; }
+.px3 { padding-left: 2rem; padding-right: 2rem; }
 .px4 { padding-left: 4rem; padding-right: 4rem; }
 .py1 { padding-top: .5rem; padding-bottom: .5rem; }
 .py3 { padding-top: 2rem; padding-bottom: 2rem; }
