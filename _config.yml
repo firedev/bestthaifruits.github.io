@@ -27,6 +27,7 @@ t:
     description: >-
       Premium Ripe Thai Fruits: Mini-Pineapple Phulae, Mango Nam Dok Mai and Avocado.
       Individual Quick Freezing and Delivery Around the World
+    download: Download
     layout:
       title: Premium Thai Fruits
       subtitle: Individual Quick Freezing and Delivery Around the World
@@ -38,12 +39,24 @@ t:
       carbs: Carbohydrate
       g: g
       kcal: kCal
+    company:
+      line_before:
+      before:
+      title: Best Thai Fruit
+      after: Co. Ltd.
+      address: 53/36 Moo 2, Vichit, Muang, Phuket, Thailand 83000
+      email: info@bestthaifruits.com
+      phone1: +7-964-931-3480
+      phone2: +668-0707-3842
+      whatsapp: 79649313480
+      line: bestthaifruits
   ru:
     title: Лучшие Тайские Фрукты
     unavailable: Временно недоступно
     description: >-
       Премиальные Cпелые Тайские Фрукты: Мини-Анансы Пуле, Манго Нам Док Май и Авокадо. Индивидуальная шоковая
       заморозка и доставка по всему миру
+    download: Скачать
     layout:
       title: Спелые Тайские Фрукты
       subtitle: Индивидуальная шоковая заморозка и доставка по всему миру
@@ -55,3 +68,14 @@ t:
       carbs: Углеводы
       g: г
       kcal: ккал
+    company:
+      line_before: Представитель в России
+      before: ООО
+      title: Бест Тай Фрут Рус
+      after:
+      address: ИНН 7734433970 ОГРН 1207700133475
+      email: ru@bestthaifruits.com
+      phone1: +7-916-244-0203
+      phone2: +7-926-737-4141
+      whatsapp: 79162440203
+      line:

@@ -11,5 +11,11 @@
   en: _fruits/2.en.mango.markdown
   ru: _fruits/2.ru.mango.markdown
 -
-  en: _fruits/3.en.avocado.markdown
-  ru: _fruits/3.ru.avocado.markdown
+  en: _fruits/3.en.mango-puree.markdown
+  ru: _fruits/3.ru.mango-puree.markdown
+-
+  en: _fruits/4.en.passion-fruit.markdown
+  ru: _fruits/4.ru.passion-fruit.markdown
+-
+  en: _fruits/4.en.avocado.markdown
+  ru: _fruits/4.ru.avocado.markdown

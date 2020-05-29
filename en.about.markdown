@@ -9,12 +9,16 @@ slug: light-orange
 {: .bold }
 # Best Thai Fruit Co. Ltd.
 
-## One of the leading manufacturers and exporters of premium frozen fruits in Thailand.
+## One of the leading manufacturers and exporters of premium IQF Flash Frozen fruits in Thailand.
 
+{: .h3 }
 We deliver fruits from the farms located in the northern Thailand in Chiang Rai
 province. We select only fresh and ripe premium quality fruits which are
 manually processed manually with the utmost care.
 
-The fruits are individually quick frozen and then packaged in a vacuum-sealed bags.
-
+{: .h3 }
+The fruits are Individually Quick Frozen and then packaged in a vacuum-sealed bags.
 Design changes are possible according to the customer requirements.
+
+{: .h3 }
+More about [**Individual Quick Freezing**](https://en.wikipedia.org/wiki/Individual_Quick_Freezing).

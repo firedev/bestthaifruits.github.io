@@ -1,5 +1,5 @@
 /* div { outline: 1px solid rgba(0,0,0,0.1); } */
-* { box-sizing: border-box; font-weight: normal }
+* { box-sizing: border-box; }
 body { min-height: 100%; margin: 0; padding: 0; font-family: "Open Sans", sans-serif; }
 /* html, body { background-image: linear-gradient(#5ccaf3, #d7f0fe); } */
 body { xbackground: url(/images/body.svg) bottom center no-repeat; background-size: cover; }
@@ -8,7 +8,7 @@ h1, .h1 { font-size: 1.75rem }
 h2, .h2 { font-size: 1.5rem }
 h3, .h3 { font-size: 1.25rem }
 img { max-width: 100% }
-a { text-decoration: none; }
+a { text-decoration: none; color: #ff3300; }
 
 /*typography*/
 .lh-double { line-height: 200%; }
@@ -16,7 +16,7 @@ a { text-decoration: none; }
 .body { font-size: 1rem }
 .regular { font-weight: 400; }
 .bold { font-weight: 700; }
-.extrabold {font-weight: 800 }
+.extrabold {font-weight: 900 }
 .small { font-size: .75rem; }
 .uppercase { text-transform: uppercase; }
 .normal { font-weight: normal }
@@ -32,6 +32,7 @@ a { text-decoration: none; }
   background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.1));
 }
 .align-center { align-items: center }
+.align-start { align-items: flex-start }
 .align-end { align-items: flex-end }
 .center { text-align: center }
 .right-align { text-align: right }
@@ -60,16 +61,25 @@ a { text-decoration: none; }
 .bg-avocado-img { background-image: url(/images/avocado.jpg) }
 .bg-mango { background-color: #fdc629; }
 .bg-mango-img { background-image: url(/images/mango.jpg) }
+.bg-mango-puree { background-color: #fdc629; }
+.bg-mango-puree-img { background-image: url(/images/mango-puree.jpg) }
+.bg-passion-fruit { background-color: #EFC5CF }
+.bg-passion-fruit-img { background-image: url(/images/passion-fruit.jpg) }
 .bg-pineapple { background-color: #FFDE51; }
 .bg-pineapple-img { background-image: url(/images/pineapple.jpg) }
 .bg-navy { background-color: #3c6eae; }
+
+.mango-puree .title span { background-color: #fdc629; padding: 0 .25rem; margin: 0 -0.25rem;}
+.mango-puree .subtitle span { background-color: #fdc629; padding: 0.25rem; margin: 0 -0.25rem; }
 
 /* borders */
 .border { border: transparent 1px solid }
 .border-orange { border-color: #ff3300 }
 .border1 { border-width: 0.25rem }
+.rounded { border-radius: 0.5rem }
 
 /* position */
+.overflow-hidden { overflow: hidden }
 .relative { position: relative }
 .absolute { position: absolute }
 .top-0 { top: 0 }
@@ -94,18 +104,27 @@ a { text-decoration: none; }
 
 .mb1 { margin-bottom: .5rem; }
 .mb2 { margin-bottom: 1rem; }
+.mb3 { margin-bottom: 2rem; }
+.mb4 { margin-bottom: 4rem; }
 .mr1 { margin-right: .5rem }
 .mr2 { margin-right: 1rem }
 .mt2 { margin-top: 1rem; }
+.mtn2 { margin-top: -1rem; }
 .mt3 { margin-top: 2rem; }
+.mtn3 { margin-top: -2rem; }
 .mt4 { margin-top: 4rem; }
 .my2 { margin-top: 1rem; margin-bottom: 1rem; }
+.my4 { margin-top: 4rem; margin-bottom: 4rem; }
 .mx-auto { margin-left: auto; margin-right: auto }
+.mxn4 { margin-left: -4rem; margin-right: -4rem; }
 .p { padding: .25rem; padding: .25rem; }
 .p1 { padding: .5rem; padding: .5rem; }
 .p2 { padding: 1rem }
 .p4 { padding: 4rem; padding: 4rem; }
 .pr { padding-right: 0.25rem; }
+.pr2 { padding-right: 1rem; }
+.pr4 { padding-right: 4rem; }
+.pl4 { padding-left: 4rem; }
 .pt { padding-top: 0.25rem; }
 .pt1 { padding-top: .5rem; }
 .pt2 { padding-top: 1rem; }
@@ -113,6 +132,7 @@ a { text-decoration: none; }
 .px { padding-left: .25rem; padding-right: .25rem; }
 .px1 { padding-left: .5rem; padding-right: .5rem; }
 .px2 { padding-left: 1rem; padding-right: 1rem; }
+.px3 { padding-left: 2rem; padding-right: 2rem; }
 .px4 { padding-left: 4rem; padding-right: 4rem; }
 .py1 { padding-top: .5rem; padding-bottom: .5rem; }
 .py3 { padding-top: 2rem; padding-bottom: 2rem; }
@@ -135,21 +155,12 @@ a { text-decoration: none; }
 .auto { flex: auto; }
 
 /*gallery*/
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.crop-to-fit img {
+  width: 9rem;
+  height: 9rem;
+  object-fit: cover;
+  object-position: center top;
 }
-
-.gallery-item {
-  max-width: 18rem;
-  max-height: 18rem;
-  width: 50%;
-  display: inline-flex;
-  overflow: hidden;
-  align-items: center;
-}
-
 /* decorative */
 .round { border-radius: 999px }
 
@@ -167,6 +178,10 @@ a { text-decoration: none; }
   h2, .h2 { font-size: 2rem }
   h3, .h3 { font-size: 1.25rem }
 
+.crop-to-fit img {
+  width: 18rem;
+  height: 18rem;
+}
   .flag { height: 1rem; }
   .icon { font-size: 2rem; }
 
