@@ -32,6 +32,7 @@ a { text-decoration: none; color: #ff3300; }
   background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.1));
 }
 .align-center { align-items: center }
+.align-start { align-items: flex-start }
 .align-end { align-items: flex-end }
 .center { text-align: center }
 .right-align { text-align: right }
