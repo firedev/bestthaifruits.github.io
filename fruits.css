@@ -79,6 +79,7 @@ a { text-decoration: none; color: #ff3300; }
 .rounded { border-radius: 0.5rem }
 
 /* position */
+.overflow-hidden { overflow: hidden }
 .relative { position: relative }
 .absolute { position: absolute }
 .top-0 { top: 0 }
