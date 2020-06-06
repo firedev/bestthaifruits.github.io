@@ -4,6 +4,14 @@ layout: default
 <div class="md-flex container mx-auto">
   <div class="col auto bg-white px2 md-px4 py3">
     {{ content }}
+    {% assign t = site.t.en %}
+    {% include company.html %}
+    <div class="pt3 px1">
+    <h2>Russia</h2>
+    </div>
+    {% assign t = site.t.ru %}
+    {% include company.html %}
+    {% assign t = site.t[page.lang] %}
   </div>
   <div class="col col-3 bg-navy flex align-center">
     <img src="/images/thailand.svg" />

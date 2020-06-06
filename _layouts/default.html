@@ -3,6 +3,7 @@
 <html lang="{{ page.lang }}">
   <head>
     <link rel="icon" type="image/png" href="/images/best-thai-fruits.png" />
+    <meta name="format-detection" content="telephone=no">
     <meta name="yandex-verification" content="be58e243a47eaedd" />
     <meta charset="utf-8">
     <meta property="og:title" content="{{page.title | default: t.title }}" />
@@ -38,19 +39,19 @@
       {% assign pages = site.fruits | concat: site.pages %}
       {% assign pages = pages | where: "lang", page.lang | where: "unavailable", nil %}
       {% for p in pages %}
-        {% if p.title %}
-          <a href="{{ p.permalink }}"
-             class="menu
-                    uppercase h3 px2 md-px2 py1 black
-                    {% if p.url == page.permalink %}
-                      bg-{{p.slug | default: 'orange' }} bold
-                    {% else %}
-                      muted
-                    {% endif %}
-                    ">
-            {{ p.title }}
-          </a>
-        {% endif %}
+      {% if p.title %}
+      <a href="{{ p.permalink }}"
+         class="menu
+         uppercase h3 px2 md-px2 py1 black
+         {% if p.url == page.permalink %}
+         bg-{{p.slug | default: 'orange' }} bold
+         {% else %}
+         muted
+         {% endif %}
+         ">
+        {{ p.title }}
+      </a>
+      {% endif %}
       {% endfor %}
     </div>
   </nav>
@@ -75,52 +76,23 @@
     <div class="md-flex container mx-auto bg-white relative flex-wrap">
       {% assign pages = site.fruits | where:"lang", page.lang | where: "unavailable", nil %}
       {% for fruit in pages %}
-        <a href="{{ fruit.permalink }}" class="block black col md-col-6 px3 py4 bg-{{fruit.slug}}-img cover">
-          <div class="h2 title"><span class="bg-{{fruit.slug}} px bold uppercase">{{ fruit.title }}</span></div>
-          <div><span class="bg-{{fruit.slug}} px subtitle">{{ fruit.subtitle }}</span></div>
-          {% include unavailable.html %}
-          <div class="py4"></div>
-        </a>
+      <a href="{{ fruit.permalink }}" class="block black col md-col-6 px3 py4 bg-{{fruit.slug}}-img cover">
+        <div class="h2 title"><span class="bg-{{fruit.slug}} px bold uppercase">{{ fruit.title }}</span></div>
+        <div><span class="bg-{{fruit.slug}} px subtitle">{{ fruit.subtitle }}</span></div>
+        {% include unavailable.html %}
+        <div class="py4"></div>
+      </a>
       {% endfor %}
     </div>
   </div>
-
-  <div class="md-flex bg-white container mx-auto p4 h3 align-start overflow-hidden">
-    <div class="col col-6 md-flex align-end mb4">
-      <div class="px1 mb2 md-show">
-        <img src="/images/logo/en.svg" class="block" style="width: 6rem"/>
-      </div>
-      <div class="px1 mb2">
-        <div>
-          <a class="black flex align-center" href="tel:{{t.company.phone1}}"><i class="h2 mr1 orange fa fa-phone-square-alt"></i> {{t.company.phone1}}</a>
-        </div>
-        <div>
-          <a class="black flex align-center" href="tel:{{t.company.phone2}}"><i class="h2 mr1 orange fa fa-phone-square-alt"></i> {{t.company.phone2}}</a>
-        </div>
-        <div>
-          <a class="black flex align-center" href="mailto:{{t.company.email}}"><i class="h2 mr1 orange fa fa-envelope-square"></i> {{t.company.email}}</a>
+  <div class="container mx-auto py4">
+    <div class="md-flex bg-white mxn1 py3 align-start overflow-hidden">
+      <div class="px3 mb2 md-show">
+        <div style="width: 9rem">
+          <img src="/images/logo/en.svg" class="block"/>
         </div>
       </div>
-    </div>
-    <div class="col col-6 flex align-end mb3">
-      <div class="px1">
-        <small class="absolute mtn3 pt1 nowrap">{{t.company.line_before}}</small>
-        <div class="flex align-start">
-          <div class="pt mr1">
-            <i class="h1 fas fa-map-marker-alt orange"></i>
-          </div>
-          <div>
-            {{t.company.before}} <span class="extrabold">{{t.company.title}}</span> {{t.company.after}}
-            <br />
-            {{t.company.address}}
-            <div class="mb1"></div>
-            <a class="whatsapp-color" href="https://wa.me/{{t.company.whatsapp}}?text=bestthaifruits.com"><i class="mr1 h2 icon fab fa-whatsapp-square"></i></a>
-            {% if t.company.line %}
-            <a class="line-color" href="line://ti/p/{{t.company.line}}"><i class="h2 icon fab fa-line"></i></a>
-            {% endif %}
-          </div>
-        </div>
-      </div>
+      {% include company.html %}
     </div>
   </div>
   <script
