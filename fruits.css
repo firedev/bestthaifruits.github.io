@@ -22,6 +22,7 @@ a { text-decoration: none; color: #ff3300; }
 .normal { font-weight: normal }
 
 /* layout */
+.block { display: block }
 .container { max-width: 80rem; }
 .shadow { box-shadow: 0 0 2rem rgba(0,0,0,0.25); }
 .shadow-up {
@@ -114,6 +115,7 @@ a { text-decoration: none; color: #ff3300; }
 .mt3 { margin-top: 2rem; }
 .mtn3 { margin-top: -2rem; }
 .mt4 { margin-top: 4rem; }
+.my1 { margin-top: .5rem; margin-bottom: .5rem; }
 .my2 { margin-top: 1rem; margin-bottom: 1rem; }
 .my4 { margin-top: 4rem; margin-bottom: 4rem; }
 .mx-auto { margin-left: auto; margin-right: auto }

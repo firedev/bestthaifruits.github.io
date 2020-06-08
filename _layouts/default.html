@@ -85,6 +85,7 @@
       {% endfor %}
     </div>
   </div>
+  {% if page.slug == "/" %}{% include pdf_download.html %}{% endif %}
   <div class="container mx-auto py4">
     <div class="md-flex bg-white mxn1 py3 align-start overflow-hidden">
       <div class="px3 mb2 md-show">
