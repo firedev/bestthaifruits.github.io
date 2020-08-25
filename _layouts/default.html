@@ -2,6 +2,15 @@
 <!doctype html>
 <html lang="{{ page.lang }}">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69016906-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-69016906-3');
+    </script>
     <link rel="icon" type="image/png" href="/images/best-thai-fruits.png" />
     <meta name="format-detection" content="telephone=no">
     <meta name="yandex-verification" content="be58e243a47eaedd" />
@@ -86,6 +95,7 @@
     </div>
   </div>
   {% if page.slug == "/" %}{% include pdf_download.html %}{% endif %}
+  {% include partners.html %}
   <div class="container mx-auto py4">
     <div class="md-flex bg-white mxn1 py3 align-start overflow-hidden">
       <div class="px3 mb2 md-show">

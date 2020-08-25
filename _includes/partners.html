@@ -1,0 +1,17 @@
+<div class="container mx-auto center p2" id="partners">
+  <div class="md-flex flex-wrap">
+    {% assign partners = "freshfrost.ru standart-mitino.ru delikateska.ru tvoydom.ru" | split: ' ' %}
+    {% assign partners = "freshfrost.ru standart-mitino.ru delikateska.ru icevkusvill.ru globalfoods.ru" | split: ' ' %}
+    {% for partner in partners %}
+    <div class="flex-1 flex flex-column p button-hover">
+      <a href="//{{partner}}">
+        <div class="contain" style="height: 3rem; background-image: url(/images/partners/{{partner}}.png)"></div>
+        <div class="my1">
+        {{partner}}
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="pb bg-orange"></div>

@@ -1,5 +1,5 @@
 /* div { outline: 1px solid rgba(0,0,0,0.1); } */
-* { box-sizing: border-box; }
+* { box-sizing: border-box; background-repeat: no-repeat; }
 body { min-height: 100%; margin: 0; padding: 0; font-family: "Open Sans", sans-serif; }
 /* html, body { background-image: linear-gradient(#5ccaf3, #d7f0fe); } */
 body { xbackground: url(/images/body.svg) bottom center no-repeat; background-size: cover; }
@@ -99,6 +99,7 @@ a { text-decoration: none; color: #ff3300; }
 .ratio-1x1 { flex: 1 }
 .z1 { z-index: 1 }
 .cover { background-size: cover; background-position: center center }
+.contain { background-size: contain; background-position: center center }
 .whatsapp { background-image: url(whatsapp.svg); }
 .line { background-image: url(line.svg); }
 .contacts { top: 100%; left: 0; right: 0; width: 100%; }
