@@ -76,9 +76,6 @@ a { text-decoration: none; color: #ff3300; }
 .bg-about-img { background-image: url(/images/about.jpg) }
 .bg-navy { background-color: #3c6eae; }
 
-.mango-puree .title span { background-color: #fdc629; padding: 0 .25rem; margin: 0 -0.25rem;}
-.mango-puree .subtitle span { background-color: #fdc629; padding: 0.25rem; margin: 0 -0.25rem; }
-
 /* borders */
 .border { border: transparent 1px solid }
 .border-orange { border-color: #ff3300 }
