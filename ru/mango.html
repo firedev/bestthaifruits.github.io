@@ -48,16 +48,13 @@
 
         
         
-
-        
-        
           <link rel="alternate" hreflang="en" href="https://bestthaifruits.com/mango" />
         
 
-      
+        
         
 
-        
+      
         
 
         
@@ -68,6 +65,9 @@
           <link rel="alternate" hreflang="ru" href="https://bestthaifruits.com/ru/mango" />
         
 
+        
+        
+
       
     
   
@@ -85,7 +85,7 @@
   
 
 
-    <link href="/fruits.css?2020-09-05" rel="stylesheet" />
+    <link href="/fruits.css?2020-09-15" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.min.css" rel="stylesheet">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/js/all.js"></script>
@@ -167,78 +167,114 @@
         <img src="/images/fruits-logo.svg" class="block" />
       </a>
     </div>
+    <div class="hide md-flex flex-column justify-end">
+      <div class="h1 bold uppercase">
+        Спелые Тайские Фрукты
+      </div>
+      <div class="h3">
+        Индивидуальная шоковая заморозка и доставка по всему миру
+      </div>
+    </div>
   </div>
   <nav>
-    <div class="container justify-center flex flex-wrap align-end mx-auto pt2">
-      
-      
-      
-      
-      <a href="/ru/pineapple"
-         class="menu
-         uppercase h3 px2 md-px2 py1 black
-         
-         muted
-         
-         ">
-        Мини-ананас
-      </a>
+    <div class="container justify-center flex flex-wrap mx-auto pt2">
       
       
       
       <a href="/ru/mango"
          class="menu
-         uppercase h3 px2 md-px2 py1 black
+         col-4
+         uppercase h2 px2 md-px2 py1 black
+         bg-mango
          
-         bg-mango bold
+         bold
          
          ">
-        Манго Нам Док Май
+        <span class="">
+          Манго Нам Док Май
+        </span>
       </a>
       
       
       
       <a href="/ru/mango-puree"
          class="menu
-         uppercase h3 px2 md-px2 py1 black
+         col-4
+         uppercase h2 px2 md-px2 py1 black
+         bg-mango-puree
          
-         muted
          
          ">
-        Пюре Манго
+        <span class="fg-mango-puree">
+          Пюре Манго
+        </span>
+      </a>
+      
+      
+      
+      <a href="/ru/mango-stick"
+         class="menu
+         col-4
+         uppercase h2 px2 md-px2 py1 black
+         bg-mango-stick
+         
+         
+         ">
+        <span class="fg-mango-stick">
+          Манго На Палочке
+        </span>
+      </a>
+      
+      
+      
+      <a href="/ru/pineapple"
+         class="menu
+         col-4
+         uppercase h2 px2 md-px2 py1 black
+         bg-pineapple
+         
+         
+         ">
+        <span class="fg-pineapple">
+          Мини-ананас
+        </span>
       </a>
       
       
       
       <a href="/ru/passion-fruit"
          class="menu
-         uppercase h3 px2 md-px2 py1 black
+         col-4
+         uppercase h2 px2 md-px2 py1 black
+         bg-passion-fruit
          
-         muted
          
          ">
-        Тайская Маракуйя
+        <span class="fg-passion-fruit">
+          Тайская Маракуйя
+        </span>
       </a>
       
       
       
       <a href="/ru/about"
          class="menu
-         uppercase h3 px2 md-px2 py1 black
+         col-4
+         uppercase h2 px2 md-px2 py1 black
+         bg-about
          
-         muted
          
          ">
-        О нас
+        <span class="fg-about">
+          О нас
+        </span>
       </a>
-      
-      
       
       
     </div>
   </nav>
   <div class="container shadow mx-auto">
-    <div class="pb bg-mango"></div>
+    <div class="pb bg-orange bg-mango"></div>
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -448,7 +484,7 @@
       </div>
     </main>
 
-    <div class="container bg-white mx-auto center p2">
+    <div class="container bg-white mx-auto center p2 md-hide">
       <div class="h1 bold uppercase">
         Спелые Тайские Фрукты
       </div>
@@ -459,18 +495,11 @@
 
     <div class="md-flex container mx-auto bg-white relative flex-wrap">
       
-      
-      <a href="/ru/pineapple" class="block black col md-col-6 px3 py4 bg-pineapple-img cover">
-        <div class="h2 title"><span class="bg-pineapple px bold uppercase">Мини-ананас</span></div>
-        <div><span class="bg-pineapple px subtitle">Король тропических фруктов</span></div>
-        
-
-        <div class="py4"></div>
-      </a>
-      
       <a href="/ru/mango" class="block black col md-col-6 px3 py4 bg-mango-img cover">
         <div class="h2 title"><span class="bg-mango px bold uppercase">Манго Нам Док Май</span></div>
+        
         <div><span class="bg-mango px subtitle">Самый нежный и вкусный сорт</span></div>
+        
         
 
         <div class="py4"></div>
@@ -478,7 +507,29 @@
       
       <a href="/ru/mango-puree" class="block black col md-col-6 px3 py4 bg-mango-puree-img cover">
         <div class="h2 title"><span class="bg-mango-puree px bold uppercase">Пюре Манго</span></div>
+        
         <div><span class="bg-mango-puree px subtitle">Только мякоть манго</span></div>
+        
+        
+
+        <div class="py4"></div>
+      </a>
+      
+      <a href="/ru/mango-stick" class="block black col md-col-6 px3 py4 bg-mango-stick-img cover">
+        <div class="h2 title"><span class="bg-mango-stick px bold uppercase">Манго На Палочке</span></div>
+        
+        <div><span class="bg-mango-stick px subtitle">Самый нежный и вкусный сорт</span></div>
+        
+        
+
+        <div class="py4"></div>
+      </a>
+      
+      <a href="/ru/pineapple" class="block black col md-col-6 px3 py4 bg-pineapple-img cover">
+        <div class="h2 title"><span class="bg-pineapple px bold uppercase">Мини-ананас</span></div>
+        
+        <div><span class="bg-pineapple px subtitle">Король тропических фруктов</span></div>
+        
         
 
         <div class="py4"></div>
@@ -486,7 +537,17 @@
       
       <a href="/ru/passion-fruit" class="block black col md-col-6 px3 py4 bg-passion-fruit-img cover">
         <div class="h2 title"><span class="bg-passion-fruit px bold uppercase">Тайская Маракуйя</span></div>
+        
         <div><span class="bg-passion-fruit px subtitle">Готовый полезный десерт</span></div>
+        
+        
+
+        <div class="py4"></div>
+      </a>
+      
+      <a href="/ru/about" class="block black col md-col-6 px3 py4 bg-about-img cover">
+        <div class="h2 title"><span class="bg-about px bold uppercase">О нас</span></div>
+        
         
 
         <div class="py4"></div>
@@ -498,9 +559,10 @@
   <div class="container mx-auto center p2" id="partners">
   <div class="flex flex-wrap">
     
-    
     <div class="flex-1 col-6 md-col-4 flex flex-column p my1 button-hover">
-      <a href="//tvoydom.ru">
+      
+      
+      <a href="http://tvoydom.ru">
         <div class="contain" style="height: 3rem; background-image: url(/images/partners/tvoydom.ru.png)"></div>
         <div class="my1">
         tvoydom.ru
@@ -509,7 +571,9 @@
     </div>
     
     <div class="flex-1 col-6 md-col-4 flex flex-column p my1 button-hover">
-      <a href="//icevkusvill.ru">
+      
+      
+      <a href="http://icevkusvill.ru">
         <div class="contain" style="height: 3rem; background-image: url(/images/partners/icevkusvill.ru.png)"></div>
         <div class="my1">
         icevkusvill.ru
@@ -518,7 +582,9 @@
     </div>
     
     <div class="flex-1 col-6 md-col-4 flex flex-column p my1 button-hover">
-      <a href="//globalfoods.ru">
+      
+      
+      <a href="http://globalfoods.ru/catalog/?q=bestthaifruits">
         <div class="contain" style="height: 3rem; background-image: url(/images/partners/globalfoods.ru.png)"></div>
         <div class="my1">
         globalfoods.ru
@@ -527,7 +593,9 @@
     </div>
     
     <div class="flex-1 col-6 md-col-4 flex flex-column p my1 button-hover">
-      <a href="//delikateska.ru">
+      
+      
+      <a href="http://delikateska.ru">
         <div class="contain" style="height: 3rem; background-image: url(/images/partners/delikateska.ru.png)"></div>
         <div class="my1">
         delikateska.ru
@@ -536,7 +604,9 @@
     </div>
     
     <div class="flex-1 col-6 md-col-4 flex flex-column p my1 button-hover">
-      <a href="//freshfrost.ru">
+      
+      
+      <a href="http://freshfrost.ru">
         <div class="contain" style="height: 3rem; background-image: url(/images/partners/freshfrost.ru.png)"></div>
         <div class="my1">
         freshfrost.ru
@@ -545,7 +615,9 @@
     </div>
     
     <div class="flex-1 col-6 md-col-4 flex flex-column p my1 button-hover">
-      <a href="//standart-mitino.ru">
+      
+      
+      <a href="http://standart-mitino.ru">
         <div class="contain" style="height: 3rem; background-image: url(/images/partners/standart-mitino.ru.png)"></div>
         <div class="my1">
         standart-mitino.ru
