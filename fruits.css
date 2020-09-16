@@ -193,8 +193,8 @@ a { text-decoration: none; color: #ff3300; }
 
   .md-hide { display: none }
   .crop-to-fit img {
-    width: 18rem;
-    height: 18rem;
+    width: 15rem;
+    height: 15rem;
   }
   .flag { height: 1rem; }
   .icon { font-size: 2rem; }
