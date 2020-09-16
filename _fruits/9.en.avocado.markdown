@@ -1,0 +1,67 @@
+---
+unavailable: true
+lang: en
+layout: fruit
+slug: avocado
+title: Thai Avocado
+subtitle: Ripe soft fruits every day
+description: >-
+  Premium Ripe Individually Quick Frozen Thai Avocado
+permalink: /avocado
+nutrition:
+  kcal: 227
+  fat: 21
+  protein: "2,7"
+  carbs: 12
+tags:
+  - Full of vitamins and minerals
+  - Lowers cholesterol
+  - Helps control weight
+package:
+  - "Weight: 80 — 100g"
+  - "Packing: Vacuum Bag 500г (5 &ndash; 6 halves)"
+  - "Shipping: Carton 15kg (30 Bags)"
+gallery:
+  - /images/avocado/avocado_1.jpg
+  - /images/avocado/avocado_2.jpg
+  - /images/avocado/avocado_3.jpg
+  - /images/avocado/avocado_4.jpg
+---
+
+## We supply selected ripe fruits, just defrost.
+
+Each avocado is peeled and pitted, divided into two
+halves, frozen via Individual Quick Freeze Method IQF
+(Individual Quick Freezing). Ready to eat after thawing.
+
+Can be used for making sauces, soups, rolls and other dishes
+Japanese food. Soft in consistency, it is ready to be eaten after thawing out.
+
+Avocado is one of the most high-calorie fruits, consisting mostly of
+healthy fats. The health benefits of avocados are recognized by
+nutritionists around the world.
+
+* Product: AVOCADO
+* Country of Origin: Thailand
+* Quality: Premium
+* Availability: Year-round
+
+## Nutrition facts per 100g
+
+* Calories - 227 kCal
+* Fat - 21 g
+* Protein - 2.7 g
+* Carbohydrate - 12 g
+* Potassium - 0.5 g
+
+## Packing
+
+* Avocado peeled, pitted, halved.
+* Vacuum-sealed bag - 500g ±3%, 6-8 halves.
+* Carton - 15kg ± 3%, 30 bags.
+
+## Storage
+
+Shelf life - 24 months in the original unopened package at a temperature of -18С.
+After being thawed keep in the refrigerator at +2–5ªС for up to 48 hours.
+Do not refreeze.

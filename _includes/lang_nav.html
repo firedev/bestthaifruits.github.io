@@ -1,4 +1,4 @@
-{% assign all_pages = site.posts | concat: site.pages | concat: site.fruits %}
+{% assign all_pages = site.pages %}
 <nav>
   {% for block in site.data.map %}
     {% for item in block[page.lang] %}

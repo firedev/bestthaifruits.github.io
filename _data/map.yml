@@ -1,21 +1,21 @@
 -
-  en: en.index.markdown
-  ru: ru.index.markdown
+  en: _pages/en.index.markdown
+  ru: _pages/ru.index.markdown
 -
-  en: en.about.markdown
-  ru: ru.about.markdown
+  en: _pages/en.about.markdown
+  ru: _pages/ru.about.markdown
 -
-  en: _fruits/1.en.pineapple.markdown
-  ru: _fruits/1.ru.pineapple.markdown
+  en: _pages/en.pineapple.markdown
+  ru: _pages/ru.pineapple.markdown
 -
-  en: _fruits/2.en.mango.markdown
-  ru: _fruits/2.ru.mango.markdown
+  en: _pages/en.mango.markdown
+  ru: _pages/ru.mango.markdown
 -
-  en: _fruits/3.en.mango-puree.markdown
-  ru: _fruits/3.ru.mango-puree.markdown
+  en: _pages/en.mango-puree.markdown
+  ru: _pages/ru.mango-puree.markdown
 -
-  en: _fruits/4.en.passion-fruit.markdown
-  ru: _fruits/4.ru.passion-fruit.markdown
+  en: _pages/en.passion-fruit.markdown
+  ru: _pages/ru.passion-fruit.markdown
 -
-  en: _fruits/4.en.avocado.markdown
-  ru: _fruits/4.ru.avocado.markdown
+  en: _pages/en.avocado.markdown
+  ru: _pages/ru.avocado.markdown

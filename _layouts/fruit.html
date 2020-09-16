@@ -6,8 +6,8 @@ layout: default
   {% assign fruit = page %}
   <div class="px2 md-px4 py3 md-col-8 relative">
     <div class="p1 md-show"></div>
-    <div class="h2 title"><span class="extrabold uppercase">{{page.title}}</span></div>
-    <div class="subtitle"><span>{{page.subtitle}}</span></div>
+    <div class="h1 title"><span class="extrabold uppercase bg-{{page.slug}}" style="letter-spacing: -2px">{{page.title}}</span></div>
+    <div class="h3 subtitle"><span class="bg-{{page.slug}}">{{page.subtitle}}</span></div>
     <br />
     {% for tag in page.tags %}
     <div class="bg-{{page.slug}} nowrap p1 mr1 mb1 inline-block">
@@ -27,7 +27,7 @@ layout: default
   </div>
   <div class="p2 mt3 auto">
     <div class="md-show h3 center pt">
-      <span class="p">
+      <span class="p bg-{{page.slug}}">
       {{ site.t[page.lang].nutrition.info }}
       </div>
     <div class="py2 flex flex-wrap justify-center mx-auto">
@@ -84,7 +84,7 @@ layout: default
     </div>
     <article>
       <div class="right md-show pl4"><img src="/images/logo/{{page.slug}}-logo.svg" /></div>
-      <header>
+      <header class="hide">
         <h1 class="h1 bold uppercase">{{ page.title | escape }}</h1>
       </header>
       <div>
@@ -96,13 +96,7 @@ layout: default
           PDF
         </a>
       </div>
-      <div class="flex flex-wrap justify-center my2" style="line-height: 0">
-        {% for img in page.gallery %}
-        <a href="{{img}}" class="swipebox block crop-to-fit p">
-            {% picture thumbnail {{img}} %}
-        </a>
-        {% endfor %}
-      </div>
+      {% include image-gallery.html folder=page.slug %}
     </article>
   </div>
 </div>

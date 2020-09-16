@@ -1,13 +1,16 @@
 ---
 layout: default
 ---
+<div class="container mx-auto">
+  <div class='embed-container'><iframe src='https://www.youtube.com/embed/KXlIQK06g6w' frameborder='0' allowfullscreen></iframe></div>
+</div>
 <div class="md-flex container mx-auto">
   <div class="col auto bg-white px2 md-px4 py3">
     {{ content }}
     {% assign t = site.t.en %}
     {% include company.html %}
     <div class="pt3 px1">
-    <h2>Russia</h2>
+      <h2>Russia</h2>
     </div>
     {% assign t = site.t.ru %}
     {% include company.html %}
@@ -17,4 +20,6 @@ layout: default
     <img src="/images/thailand.svg" />
   </div>
 </div>
+<div class="pb bg-orange"></div>
+{% include image-gallery.html folder=page.slug %}
 <div class="pb bg-orange"></div>

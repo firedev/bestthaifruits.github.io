@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 4.0.0'
+gem 'jekyll', '<5'
 
 group :jekyll_plugins do
   gem 'jekyll-admin'

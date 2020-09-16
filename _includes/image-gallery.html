@@ -1,0 +1,16 @@
+{% assign folder = "images/" | append: include.folder | append: "/" %}
+<div class="flex flex-wrap justify-center my2" style="line-height: 0">
+    {% for file in site.static_files %}
+        {% if file.path contains folder %}
+            {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.JPG' or file.extname == '.JPEG' %}
+                {% assign filenameparts = file.path | split: "/" %}
+                {% assign filename = filenameparts | last | replace: file.extname,"" %}
+                {% assign img = file.path | relative_url %}
+                <a href="{{img}}" class="swipebox block crop-to-fit p">
+                    {% picture thumbnail {{img}} %}
+                </a>
+                </li>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>

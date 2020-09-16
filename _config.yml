@@ -5,6 +5,19 @@ collections:
   fruits:
     output: true
     permalink: /:slug
+  pages:
+    output: true
+    permalink: /:slug
+    sort_by: position
+
+partners:
+  tvoydom.ru:
+  icevkusvill.ru:
+  globalfoods.ru:
+    link: globalfoods.ru/catalog/?q=bestthaifruits
+  delikateska.ru:
+  freshfrost.ru:
+  standart-mitino.ru:
 
 defaults:
   #languages

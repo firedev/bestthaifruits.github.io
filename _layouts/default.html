@@ -20,8 +20,8 @@
     <meta property="og:site_name" content="{{ t.title }}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{site.url}}{{page.permalink}}" />
-    <meta property="og:image" content="{{site.url}}/images/fruits-logo.png" />
-    <title>{{ page.title }}{% if page.title %} | {% endif %}{{ t.title }}</title>
+    <meta property="og:image" content="{{site.url}}/images/16x9.png" />
+    <title>{% if page.title != empty %}{{ page.title }} | {% endif %}{{ t.title }}</title>
     <meta name="google-site-verification" content="f-YEKvNR-QK5_3QE44BbQeOhW_QQA9Z2jwDklmw7Hds" />
     <meta name="viewport" content="width=450">
     <meta name="description" content="{{ page.description | default: t.description }}"/>
@@ -42,30 +42,40 @@
         <img src="/images/fruits-logo.svg" class="block" />
       </a>
     </div>
+    <div class="hide md-flex flex-column justify-end">
+      <div class="h1 bold uppercase">
+        {{ t.layout.title }}
+      </div>
+      <div class="h3">
+        {{ t.layout.subtitle }}
+      </div>
+    </div>
   </div>
   <nav>
-    <div class="container justify-center flex flex-wrap align-end mx-auto pt2">
-      {% assign pages = site.fruits | concat: site.pages %}
-      {% assign pages = pages | where: "lang", page.lang | where: "unavailable", nil %}
+    <div class="container justify-center flex flex-wrap mx-auto pt2">
+      {% assign pages = site.pages | where: "lang", page.lang | where: "hide", nil %}
       {% for p in pages %}
       {% if p.title %}
       <a href="{{ p.permalink }}"
          class="menu
-         uppercase h3 px2 md-px2 py1 black
+         col-4
+         uppercase h2 px2 md-px2 py1 black
+         bg-{{p.slug | default: 'red' }}
          {% if p.url == page.permalink %}
-         bg-{{p.slug | default: 'orange' }} bold
+         bold
          {% else %}
-         muted
          {% endif %}
          ">
-        {{ p.title }}
+        <span class="{% if p.url != page.permalink %}fg-{{p.slug}}{%endif%}">
+          {{ p.title }}
+        </span>
       </a>
       {% endif %}
       {% endfor %}
     </div>
   </nav>
   <div class="container shadow mx-auto">
-    <div class="pb bg-{{page.slug | default: 'orange'}}"></div>
+    <div class="pb bg-orange bg-{{page.slug | default: 'orange'}}"></div>
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -73,7 +83,7 @@
       </div>
     </main>
 
-    <div class="container bg-white mx-auto center p2">
+    <div class="container bg-white mx-auto center p2 md-hide">
       <div class="h1 bold uppercase">
         {{ t.layout.title }}
       </div>
@@ -83,11 +93,12 @@
     </div>
 
     <div class="md-flex container mx-auto bg-white relative flex-wrap">
-      {% assign pages = site.fruits | where:"lang", page.lang | where: "unavailable", nil %}
-      {% for fruit in pages %}
-      <a href="{{ fruit.permalink }}" class="block black col md-col-6 px3 py4 bg-{{fruit.slug}}-img cover">
-        <div class="h2 title"><span class="bg-{{fruit.slug}} px bold uppercase">{{ fruit.title }}</span></div>
-        <div><span class="bg-{{fruit.slug}} px subtitle">{{ fruit.subtitle }}</span></div>
+      {% for p in pages %}
+      <a href="{{ p.permalink }}" class="block black col md-col-6 px3 py4 bg-{{p.slug}}-img cover">
+        <div class="h2 title"><span class="bg-{{p.slug}} px bold uppercase">{{ p.title }}</span></div>
+        {% if p.subtitle %}
+        <div><span class="bg-{{p.slug}} px subtitle">{{ p.subtitle }}</span></div>
+        {% endif %}
         {% include unavailable.html %}
         <div class="py4"></div>
       </a>
