@@ -3,7 +3,7 @@ position: 50
 lang: en
 layout: fruit
 slug: passion-fruit
-title: Thai Passion Fruit
+title: Passion Fruit
 subtitle: Tropical Pulp Fiction
 description: >-
   Premium Frozen Thai Passion Fruit Pulp

@@ -31,13 +31,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.min.css" rel="stylesheet">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/js/all.js"></script>
   </head>
-  <div class="container mx-auto relative">
+  <div class="mx-auto relative">
     <div class="absolute right-0 p1">
       {% include lang_nav.html %}
     </div>
   </div>
-  <div class="container flex justify-center mx-auto pt2">
-    <div class="col col-2">
+  <div class="flex justify-center mx-auto pt2 bg-light-yellow py2">
+    <div class="col col-2 lg-col-1">
       <a href="/{% if page.lang != site.lang %}{{page.lang}}{% endif %}">
         <img src="/images/fruits-logo.svg" class="block" />
       </a>
@@ -52,7 +52,7 @@
     </div>
   </div>
   <nav>
-    <div class="container justify-center flex flex-wrap mx-auto pt2">
+    <div class="justify-center flex flex-wrap mx-auto">
       {% assign pages = site.pages | where: "lang", page.lang | where: "hide", nil %}
       {% for p in pages %}
       {% if p.title %}
@@ -74,7 +74,7 @@
       {% endfor %}
     </div>
   </nav>
-  <div class="container shadow mx-auto">
+  <div class="shadow mx-auto">
     <div class="pb bg-orange bg-{{page.slug | default: 'orange'}}"></div>
 
     <main class="page-content" aria-label="Content">
@@ -83,29 +83,7 @@
       </div>
     </main>
 
-    <div class="container bg-white mx-auto center p2 md-hide">
-      <div class="h1 bold uppercase">
-        {{ t.layout.title }}
-      </div>
-      <div>
-        {{ t.layout.subtitle }}
-      </div>
-    </div>
-
-    <div class="md-flex container mx-auto bg-white relative flex-wrap">
-      {% for p in pages %}
-      <a href="{{ p.permalink }}" class="block black col md-col-6 px3 py4 bg-{{p.slug}}-img cover">
-        <div class="h2 title"><span class="bg-{{p.slug}} px bold uppercase">{{ p.title }}</span></div>
-        {% if p.subtitle %}
-        <div><span class="bg-{{p.slug}} px subtitle">{{ p.subtitle }}</span></div>
-        {% endif %}
-        {% include unavailable.html %}
-        <div class="py4"></div>
-      </a>
-      {% endfor %}
-    </div>
   </div>
-  {% if page.slug == "/" %}{% include pdf_download.html %}{% endif %}
   {% include partners.html %}
   <div class="container mx-auto py4">
     <div class="md-flex bg-white mxn1 py3 align-start overflow-hidden">

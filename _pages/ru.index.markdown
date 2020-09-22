@@ -2,7 +2,7 @@
 position: 0
 lang: ru
 permalink: /ru
-layout: default
+layout: index
 slug: '/'
 hide: true
 title: ''

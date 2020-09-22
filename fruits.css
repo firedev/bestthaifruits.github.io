@@ -57,6 +57,7 @@ a { text-decoration: none; color: #ff3300; }
 .line-color { color: #00C300; }
 .orange { color: #ff3300 }
 .bg-light-orange { background-color: #ff9966; }
+.bg-light-yellow { background-color: #ffeebb; }
 .bg-red { background-color: #ff0000 }
 .bg-orange { background-color: #ff3300 }
 .bg-white { background-color: #fff; }
@@ -65,7 +66,7 @@ a { text-decoration: none; color: #ff3300; }
 .bg-mango { background-color: #fdc629; }
 .bg-mango-img { background-image: url(/images/mango.jpg) }
 .bg-mango-stick { background-color: #fdc629; }
-.bg-mango-stick-img { background-image: url(/images/mango-stick/mango-stick.jpg) }
+.bg-mango-stick-img { background-image: url(/images/mango-stick/mango-stick-1.jpg) }
 .bg-mango-puree { background-color: #fdc629; }
 .bg-mango-puree-img { background-image: url(/images/mango-puree.jpg) }
 .bg-passion-fruit { background-color: #EFC5CF }
@@ -73,7 +74,7 @@ a { text-decoration: none; color: #ff3300; }
 .bg-passion-fruit-img { background-image: url(/images/passion-fruit.jpg) }
 .bg-pineapple { background-color: #FFDE51; }
 .bg-pineapple-img { background-image: url(/images/pineapple.jpg) }
-.bg-about { background-color: #ff3300; }
+.bg-about { background-color: #ff6666; color: white; }
 .bg-about-img { background-image: url(/images/fruits-logo.png); background-size: contain !important }
 .bg-navy { background-color: #3c6eae; }
 
@@ -100,7 +101,8 @@ a { text-decoration: none; color: #ff3300; }
 }
 .right { float: right; }
 .flex-1 { flex: 1 }
-.ratio-1x1 { flex: 1 }
+.ratio-1x1 { padding-bottom: 100% }
+.ratio-16x9 { padding-bottom: 56.25% }
 .z1 { z-index: 1 }
 .cover { background-size: cover; background-position: center center }
 .contain { background-size: contain; background-position: center center }
@@ -179,6 +181,7 @@ a { text-decoration: none; color: #ff3300; }
 /* responsive */
 .hide { display: none }
 .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.lg-show,
 .md-show { display: none }
 /* flags */
 .flag { height: 1.5rem; }
@@ -189,7 +192,7 @@ a { text-decoration: none; color: #ff3300; }
   h2, .h2 { font-size: 2rem }
   h3, .h3 { font-size: 1.25rem }
 
-.menu { letter-spacing: -2px }
+  .menu { letter-spacing: -2px }
 
   .md-hide { display: none }
   .crop-to-fit img {
@@ -213,4 +216,19 @@ a { text-decoration: none; color: #ff3300; }
   .md-col-6 { flex: 0 0 50%; width: 50%; }
   .md-col-8 { flex: 0 0 66.666%; width: 66.666%; }
   .md-col-12 { flex: 0 0 100%; width: 100%; }
+}
+
+@media(min-width: 90rem) {
+  body { font-size: 20px }
+  h1, .h1 { font-size: 4rem }
+  h2, .h2 { font-size: 2.5rem }
+  h3, .h3 { font-size: 1.5rem }
+  .lg-show { display: block }
+  .lg-col-1 { flex: 0 0 8.333%; }
+  .lg-col-2 { flex: 0 0 16.666%; }
+  .lg-col-3 { flex: 0 0 25%; }
+  .lg-col-4 { flex: 0 0 33.333%; }
+  .lg-col-6 { flex: 0 0 50%; width: 50%; }
+  .lg-col-8 { flex: 0 0 66.666%; width: 66.666%; }
+  .lg-col-12 { flex: 0 0 100%; width: 100%; }
 }

@@ -3,7 +3,7 @@ position: 30
 lang: en
 layout: fruit
 slug: mango-stick
-title: Mango on a Stick
+title: Mango on a&nbsp;Stick
 subtitle: The most delicate and delicious variety
 description: >-
   Premium Ripe Individually Quick Frozen Thai Mango Nam Dok Mai

@@ -4,6 +4,7 @@ layout: default
 <div class="container mx-auto">
   <div class='embed-container'><iframe src='https://www.youtube.com/embed/KXlIQK06g6w' frameborder='0' allowfullscreen></iframe></div>
 </div>
+<div class="pb bg-orange"></div>
 <div class="md-flex container mx-auto">
   <div class="col auto bg-white px2 md-px4 py3">
     {{ content }}
@@ -16,10 +17,8 @@ layout: default
     {% include company.html %}
     {% assign t = site.t[page.lang] %}
   </div>
-  <div class="col col-3 bg-navy flex align-center">
+  <div class="md-show col col-3 bg-navy flex align-center">
     <img src="/images/thailand.svg" />
   </div>
 </div>
-<div class="pb bg-orange"></div>
 {% include image-gallery.html folder=page.slug %}
-<div class="pb bg-orange"></div>

@@ -11,7 +11,12 @@ collections:
     sort_by: position
 
 partners:
+  lavka.yandex:
+  eda.yandex:
+    link: https://eda.yandex/lavka/?category=15984521ecc0421293343f0f90f14843000100010001&isGrocery=true
   tvoydom.ru:
+  vkusvill.ru:
+    link: https://vkusvill.ru/goods/vkusvillays/ovoshchi_frukty_yagody_griby_zamorozhennye/
   icevkusvill.ru:
   globalfoods.ru:
     link: globalfoods.ru/catalog/?q=bestthaifruits

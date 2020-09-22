@@ -2,7 +2,7 @@
 position: 0
 lang: en
 permalink: /
-layout: default
+layout: index
 slug: '/'
 hide: true
 title: ''

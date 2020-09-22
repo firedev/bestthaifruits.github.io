@@ -2,77 +2,80 @@
 layout: default
 ---
 
-<div class="{{page.slug}} md-flex relative container mx-auto bg-white bg-{{page.slug}}-img cover">
-  {% assign fruit = page %}
-  <div class="px2 md-px4 py3 md-col-8 relative">
-    <div class="p1 md-show"></div>
-    <div class="h1 title"><span class="extrabold uppercase bg-{{page.slug}}" style="letter-spacing: -2px">{{page.title}}</span></div>
-    <div class="h3 subtitle"><span class="bg-{{page.slug}}">{{page.subtitle}}</span></div>
-    <br />
-    {% for tag in page.tags %}
-    <div class="bg-{{page.slug}} nowrap p1 mr1 mb1 inline-block">
-      <i class="fa fa-check"></i>
-      {{tag}}
-    </div>
-    <br />
-    {% endfor %}
-    {% for tag in page.package %}
-    <div class="bg-white nowrap p1 mr1 mb1 inline-block">
-      <i class="fa fa-check"></i>
-      {{tag}}
-    </div>
-    <br/>
-    {% endfor %}
-    <div class="p1 md-show"></div>
-  </div>
-  <div class="p2 mt3 auto">
-    <div class="md-show h3 center pt">
-      <span class="p bg-{{page.slug}}">
-      {{ site.t[page.lang].nutrition.info }}
+<div class="{{page.slug}} relative mx-auto bg-white bg-{{page.slug}}-img cover">
+  <div class="lg-show pt4"></div>
+  <div class="container mx-auto">
+    <div class="px2 md-px4 py3 relative">
+      <div class="p1 md-show"></div>
+      <div class="h1 title"><span class="extrabold uppercase bg-{{page.slug}}" style="letter-spacing: -2px">{{page.title}}</span></div>
+      <div class="h3 subtitle"><span class="bg-{{page.slug}}">{{page.subtitle}}</span></div>
+      <br />
+      {% for tag in page.tags %}
+      <div class="bg-{{page.slug}} nowrap p1 mr1 mb1 inline-block">
+        <i class="fa fa-check"></i>
+        {{tag}}
       </div>
-    <div class="py2 flex flex-wrap justify-center mx-auto">
-      <div class="p">
-        <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
-          <span class="small pt1">
-            {{ site.t[page.lang].nutrition.fat }}
-          </span>
-          <div class="h3 bold">
-            {{page.nutrition.fat}}{{ site.t[page.lang].nutrition.g }}
-          </div>
-        </div>
+      <br />
+      {% endfor %}
+      {% for tag in page.package %}
+      <div class="bg-white nowrap p1 mr1 mb1 inline-block">
+        <i class="fa fa-check"></i>
+        {{tag}}
       </div>
-      <div class="p">
-        <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
-          <span class="small pt1">
-            {{ site.t[page.lang].nutrition.carbs }}
-          </span>
-          <div class="h3 bold">
-            {{page.nutrition.carbs}}{{ site.t[page.lang].nutrition.g }}
-          </div>
-        </div>
-      </div>
-      <div class="p">
-        <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
-          <span class="small pt1">
-            {{ site.t[page.lang].nutrition.protein }}
-          </span>
-          <div class="h3 bold">
-            {{page.nutrition.protein}}{{ site.t[page.lang].nutrition.g }}
-          </div>
-        </div>
-      </div>
-      <div class="p">
-        <div class="round bg-{{page.slug}} w4 h4 center shadow flex flex-column justify-center">
-          <span class="small pt1">
-            {{ site.t[page.lang].nutrition.calories }}
-          </span>
-          <div class="h3 bold">
-            {{page.nutrition.kcal}}{{ site.t[page.lang].nutrition.kcal }}
-          </div>
-        </div>
-      </div>
+      <br/>
+      {% endfor %}
       <div class="p1 md-show"></div>
     </div>
+    <div class="p2 mt3 auto container">
+      <div class="md-show h3 center pt">
+        <span class="p bg-{{page.slug}}">
+          {{ site.t[page.lang].nutrition.info }}
+      </div>
+      <div class="py2 flex flex-wrap justify-center mx-auto">
+        <div class="p">
+          <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
+            <span class="small pt1">
+              {{ site.t[page.lang].nutrition.fat }}
+            </span>
+            <div class="h3 bold">
+              {{page.nutrition.fat}}{{ site.t[page.lang].nutrition.g }}
+            </div>
+          </div>
+        </div>
+        <div class="p">
+          <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
+            <span class="small pt1">
+              {{ site.t[page.lang].nutrition.carbs }}
+            </span>
+            <div class="h3 bold">
+              {{page.nutrition.carbs}}{{ site.t[page.lang].nutrition.g }}
+            </div>
+          </div>
+        </div>
+        <div class="p">
+          <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
+            <span class="small pt1">
+              {{ site.t[page.lang].nutrition.protein }}
+            </span>
+            <div class="h3 bold">
+              {{page.nutrition.protein}}{{ site.t[page.lang].nutrition.g }}
+            </div>
+          </div>
+        </div>
+        <div class="p">
+          <div class="round bg-{{page.slug}} w4 h4 center shadow flex flex-column justify-center">
+            <span class="small pt1">
+              {{ site.t[page.lang].nutrition.calories }}
+            </span>
+            <div class="h3 bold">
+              {{page.nutrition.kcal}}{{ site.t[page.lang].nutrition.kcal }}
+            </div>
+          </div>
+        </div>
+        <div class="p1 md-show"></div>
+      </div>
+    </div>
+    <div class="lg-show pb4 pt4"></div>
   </div>
   <div class="shadow-up"></div>
 </div>
@@ -80,7 +83,7 @@ layout: default
 <div class="flex container mx-auto">
   <div class="col col-12 auto bg-white px2 md-px4 py3 relative">
     <div class="absolute" style="right: 10rem; top: -2rem;">
-    {% include unavailable.html %}
+      {% include unavailable.html %}
     </div>
     <article>
       <div class="right md-show pl4"><img src="/images/logo/{{page.slug}}-logo.svg" /></div>
@@ -96,10 +99,10 @@ layout: default
           PDF
         </a>
       </div>
-      {% include image-gallery.html folder=page.slug %}
     </article>
   </div>
 </div>
 
-<div class="bg-orange pb mt4"></div>
+{% include image-gallery.html folder=page.slug %}
+<div class="bg-orange pb"></div>
 <!-- unclosed div -->

@@ -1,5 +1,5 @@
 <div class="container mx-auto center p2" id="partners">
-  <div class="flex flex-wrap">
+  <div class="flex flex-wrap justify-center">
     {% for partner in site.partners %}
     <div class="flex-1 col-6 md-col-4 flex flex-column p my1 button-hover">
       {% assign link = partner[1].link | default: partner[0] %}
