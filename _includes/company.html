@@ -21,14 +21,17 @@
       <div>
         <small class="absolute mtn3 pt1 nowrap">{{t.company.line_before}}</small>
         <div class="nowrap">
-        {{t.company.before}} <span class="extrabold">{{t.company.title}}</span> {{t.company.after}}
+          {{t.company.before}} <span class="extrabold">{{t.company.title}}</span> {{t.company.after}}
         </div>
         {{t.company.address}}
         <div class="mb1"></div>
-        <a class="whatsapp-color" href="https://wa.me/{{t.company.whatsapp}}?text=bestthaifruits.com"><i class="mr1 h2 icon fab fa-whatsapp-square"></i></a>
-        {% if t.company.line %}
-        <a class="line-color" href="line://ti/p/{{t.company.line}}"><i class="h2 icon fab fa-line"></i></a>
-        {% endif %}
+        <div class="flex align-center">
+          <a class="whatsapp-color" href="https://wa.me/{{t.company.whatsapp}}?text=bestthaifruits.com"><i class="mr1 h2 icon fab fa-whatsapp-square"></i></a>
+          {% if t.company.line %}
+          <a class="line-color" href="line://ti/p/{{t.company.line}}"><i class=" mr1 h2 icon fab fa-line"></i></a>
+          {% endif %}
+          <a class="instagram flex align-center" href="https://www.instagram.com/bestthaifruits/"><i class="h2 icon fab fa-instagram mr"></i> bestthaifruits</a>
+        </div>
       </div>
     </div>
   </div>
