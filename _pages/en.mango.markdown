@@ -18,9 +18,9 @@ tags:
   - Natural antidepressant
   - High concentration of vitamins
 package:
-  - "Weight: 80 — 120g"
-  - "Packing: Vacuum Bag 500г (4 &ndash; 6 halves)"
-  - "Shipping: Carton 15kg (30 Bags)"
+  - "Weight 80 — 120g"
+  - "Vacuum Bag 500г / 4 &ndash; 6 halves"
+  - "Carton 15kg / 30 Bags"
 gallery:
   - /images/mango/mango_1.jpg
   - /images/mango/mango_2.jpg

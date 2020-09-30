@@ -16,7 +16,7 @@ layout: default
   {% for p in pages %}
   <a href="{{ p.permalink }}" class="block black col md-col-6 lg-col-4 px3 py4 bg-{{p.slug}}-img cover">
     <div class="lg-show pt4"></div>
-    <div class="h1 title"><span class="bg-{{p.slug}} px bold uppercase">{{ p.title }}</span></div>
+    <div class="h1 title squeeze"><span class="bg-{{p.slug}} px bold uppercase">{{ p.title }}</span></div>
     {% if p.subtitle %}
     <div><span class="h3 bg-{{p.slug}} px subtitle">{{ p.subtitle }}</span></div>
     {% endif %}

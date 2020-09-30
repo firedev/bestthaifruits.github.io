@@ -4,9 +4,9 @@ lang: en
 layout: fruit
 slug: mango-stick
 title: Mango on a&nbsp;Stick
-subtitle: The most delicate and delicious variety
+subtitle: Is Better than Ice Cream
 description: >-
-  Premium Ripe Individually Quick Frozen Thai Mango Nam Dok Mai
+  Premium ripe frozen Thai Mango on a Stick
 permalink: /mango-stick
 nutrition:
   kcal: 65
@@ -14,13 +14,12 @@ nutrition:
   protein: "0,5"
   carbs: 17
 tags:
-  - Great dietary product
-  - Natural antidepressant
-  - High concentration of vitamins
+  - Pitted mango slice on a stick
+  - 100% Natural Mango fruit
+  - Healthy dessert
 package:
-  - "Weight: 80 — 120g"
-  - "Packing: Vacuum Bag 500г (4 &ndash; 6 halves)"
-  - "Shipping: Carton 15kg (30 Bags)"
+  - "Weight 70g"
+  - "Carton 8.4kg / 120 Packs"
 gallery:
   - /images/mango/mango_1.jpg
   - /images/mango/mango_2.jpg
@@ -30,21 +29,16 @@ gallery:
   - /images/mango/mango_6.jpg
 ---
 
-## The very “Thai Mango”, that is brought back by friends vacationing in Thailand.
+## Best Mango in the World on a Stick
 
-Each fruit is peeled and pitted, divided into two halves, frozen
-method of Individual Shock Freezing IQF (Individual Quick Freezing).
-Ready to eat after thawing.
+Each fruit is peeled and pitted, divided into two halves, put on a stick and
+flash frozen via Individual Shock Freezing Method IQF.
+Ready to eat.
 
-Mango has the ability to reduce weight and normalize cholesterol in
-blood. Mango contains substances that regulate the metabolic rate in
-the body, accelerating the excretion of fluids and are powerful antioxidants.
+A unique product, natural Ice cream made with a whole pitted half of a ripe premium Thai Mango.
+Healthy Ice cream, guilt-free dessert and natural antidepressant.
 
-In addition, mango is considered a natural antidepressant. Regular
-eating mangoes helps relieve nervous tension, improve mood and
-prevent the risk of depression.
-
-* Product: MANGO YELLOW
+* Product: MANGO YELLOW SLICE ON A STICK
 * Variety: Nam Dok Mai
 * Country of Origin: Thailand
 * Quality: Premium
@@ -59,12 +53,10 @@ prevent the risk of depression.
 
 ## PACKING:
 
-* Mango peeled, pitted, halves.
-* Vacuum-sealed bag - 500g ± 3%, 4-6 halves.
-* Carton - 15kg ± 3%, 30 bags.
+* Mango peeled, pitted, on a stick
+* Weight - 70g
+* Shipping - Carton 11kg / 120 packs
 
 ## STORAGE:
 
-Shelf life - 24 months in the original unopened package at a temperature of -18С.
-After being thawed keep in the refrigerator at +2–5ªС for up to 48 hours.
-Do not refreeze.
+Shelf life - 24 months in the original unopened package at a temperature of -18°C.

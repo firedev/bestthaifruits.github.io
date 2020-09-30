@@ -26,6 +26,7 @@ a { text-decoration: none; color: #ff3300; }
 .block { display: block }
 .container { max-width: 80rem; }
 .shadow { box-shadow: 0 0 2rem rgba(0,0,0,0.25); }
+.white-shadow { box-shadow: 0 0 2rem #fff; }
 .shadow-up {
   position: absolute;
   bottom: 0;
@@ -66,7 +67,7 @@ a { text-decoration: none; color: #ff3300; }
 .bg-mango { background-color: #fdc629; }
 .bg-mango-img { background-image: url(/images/mango.jpg) }
 .bg-mango-stick { background-color: #fdc629; }
-.bg-mango-stick-img { background-image: url(/images/mango-stick/mango-stick-1.jpg) }
+.bg-mango-stick-img { background-image: url(/images/mango-stick.jpg) }
 .bg-mango-puree { background-color: #fdc629; }
 .bg-mango-puree-img { background-image: url(/images/mango-puree.jpg) }
 .bg-passion-fruit { background-color: #EFC5CF }
@@ -174,9 +175,7 @@ a { text-decoration: none; color: #ff3300; }
 }
 /* decorative */
 .round { border-radius: 999px }
-
-/* menu */
-.menu { letter-spacing: -1px }
+.squeeze { letter-spacing: -1px }
 
 /* responsive */
 .hide { display: none }
@@ -192,7 +191,7 @@ a { text-decoration: none; color: #ff3300; }
   h2, .h2 { font-size: 2rem }
   h3, .h3 { font-size: 1.25rem }
 
-  .menu { letter-spacing: -2px }
+  .squeeze { letter-spacing: -2px }
 
   .md-hide { display: none }
   .crop-to-fit img {

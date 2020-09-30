@@ -36,41 +36,41 @@
       {% include lang_nav.html %}
     </div>
   </div>
-  <div class="flex justify-center mx-auto pt2 bg-light-yellow py2">
-    <div class="col col-2 lg-col-1">
-      <a href="/{% if page.lang != site.lang %}{{page.lang}}{% endif %}">
+  <a class="black" href="/{% if page.lang != site.lang %}{{page.lang}}{% endif %}">
+    <div class="flex justify-center mx-auto pt2 bg-light-yellow py2">
+      <div class="col col-2 lg-col-1">
         <img src="/images/fruits-logo.svg" class="block" />
-      </a>
-    </div>
-    <div class="hide md-flex flex-column justify-end">
-      <div class="h1 bold uppercase">
-        {{ t.layout.title }}
       </div>
-      <div class="h3">
-        {{ t.layout.subtitle }}
+      <div class="hide md-flex flex-column justify-end">
+        <div class="h1 squeeze bold uppercase">
+          {{ t.layout.title }}
+        </div>
+        <div class="h3">
+          {{ t.layout.subtitle }}
+        </div>
       </div>
     </div>
-  </div>
+  </a>
   <nav>
     <div class="justify-center flex flex-wrap mx-auto">
       {% assign pages = site.pages | where: "lang", page.lang | where: "hide", nil %}
       {% for p in pages %}
-      {% if p.title %}
-      <a href="{{ p.permalink }}"
-         class="menu
-         col-4
-         uppercase h2 px2 md-px2 py1 black
-         bg-{{p.slug | default: 'red' }}
-         {% if p.url == page.permalink %}
-         bold
-         {% else %}
-         {% endif %}
-         ">
-        <span class="{% if p.url != page.permalink %}fg-{{p.slug}}{%endif%}">
-          {{ p.title }}
-        </span>
-      </a>
-      {% endif %}
+        {% if p.title %}
+          <a href="{{ p.permalink }}"
+             class="squeeze
+             col-4
+             uppercase h2 px2 md-px2 py1 black
+             bg-{{p.slug | default: 'red' }}
+             {% if p.url == page.permalink %}
+               bold
+             {% else %}
+             {% endif %}
+             ">
+            <span class="{% if p.url != page.permalink %}fg-{{p.slug}}{%endif%}">
+              {{ p.title }}
+            </span>
+          </a>
+        {% endif %}
       {% endfor %}
     </div>
   </nav>
@@ -78,9 +78,7 @@
     <div class="pb bg-orange bg-{{page.slug | default: 'orange'}}"></div>
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+      {{ content }}
     </main>
 
   </div>

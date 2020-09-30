@@ -19,8 +19,8 @@ tags:
   - Снижает холестерин
 package:
   - "Мякоть маракуйи"
-  - "Упаковка: Пакет 500г"
-  - "Поставка: Коробка 15кг (30 пакетов)"
+  - "Пакет 500г"
+  - "Коробка 15кг (30 пакетов)"
 gallery:
   - /images/passion-fruit/passion-fruit_1.jpg
   - /images/passion-fruit/passion-fruit_2.jpg

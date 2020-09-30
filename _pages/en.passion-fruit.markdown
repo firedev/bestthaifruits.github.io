@@ -18,9 +18,9 @@ tags:
   - Bolsters Central Nervous System
   - Lowers Cholesterol
 package:
-  - "Passion Fruit Pulp"
-  - "Packing: Vacuum Bag 500g"
-  - "Shipping: Carton 15kg (30 Bags)"
+  - "100% Passion Fruit Pulp"
+  - "Vacuum Bag 500g"
+  - "Carton 15kg / 30 Packs"
 gallery:
   - /images/passion-fruit/passion-fruit_1.jpg
   - /images/passion-fruit/passion-fruit_2.jpg

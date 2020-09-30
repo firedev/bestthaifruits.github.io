@@ -19,8 +19,8 @@ tags:
   - Helps control weight
 package:
   - "Weight: 80 — 100g"
-  - "Packing: Vacuum Bag 500г (5 &ndash; 6 halves)"
-  - "Shipping: Carton 15kg (30 Bags)"
+  - "Packing: Vacuum Bag 500g / 5 &ndash; 6 halves"
+  - "Shipping: Carton 15kg / 30 Bags"
 gallery:
   - /images/avocado/avocado_1.jpg
   - /images/avocado/avocado_2.jpg

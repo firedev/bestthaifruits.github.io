@@ -19,8 +19,8 @@ tags:
   - High concentration of vitamins
 package:
   - "100% Mango Puree / Pulp"
-  - "Packing: Vacuum Bag 500g / 1000g"
-  - "Shipping: Carton 15kg (30 / 15 Bags)"
+  - "Vacuum Bag 500g / 1000 g"
+  - "Carton 15kg / 30 or 15 Packs"
 gallery:
   - /images/mango-puree/mango-puree_1.jpg
   - /images/mango-puree/mango-puree_2.jpg
@@ -56,7 +56,7 @@ prevent the risk of depression.
 
 * 100% Mango Puree / Pulp
 * Vacuum-sealed bag — 500g / 1000g
-* Package — Carton 15kg ±3%, 30 / 15 bags.
+* Shipping — Carton 15kg ±3%, 30 / 15 bags.
 
 ## Storage
 

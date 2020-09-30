@@ -18,9 +18,9 @@ tags:
   - Strengthens blood vessels
   - Improves digestion
 package:
-  - "Weight: 60 — 90g"
-  - "Packing: Vacuum Bag 500g (6 — 8 pcs)"
-  - "Shipping: Carton 12kg (24 Bags)"
+  - "Weight 60 — 90 g"
+  - "Vacuum Bag 500 g / 6 — 8 pcs"
+  - "Carton 12kg / 24 Packs"
 gallery:
   - /images/pineapple/pineapple_1.jpg
   - /images/pineapple/pineapple_2.jpg
