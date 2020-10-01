@@ -3,8 +3,8 @@ position: 10
 lang: en
 layout: fruit
 slug: mango
-title: Mango Nam Dok Mai
-subtitle: The most delicate and delicious variety
+title: Thai Mango Slices
+subtitle: The most delicious variety Nam Dok Mai
 description: >-
   Premium Ripe Individually Quick Frozen Thai Mango Nam Dok Mai
 permalink: /mango
@@ -18,9 +18,9 @@ tags:
   - Natural antidepressant
   - High concentration of vitamins
 package:
-  - "Weight 80 — 120g"
+  - "Peeled Mango Slices 80 — 120g"
   - "Vacuum Bag 500г / 4 &ndash; 6 halves"
-  - "Carton 15kg / 30 Bags"
+  - "Carton 10kg / 20 Bags"
 gallery:
   - /images/mango/mango_1.jpg
   - /images/mango/mango_2.jpg
@@ -50,20 +50,7 @@ prevent the risk of depression.
 * Quality: Premium
 * Availability: Year-round
 
-## NUTRITION FACTS PER 100G
-
-* Energy content - 65 kCal
-* Fat - 0.3 g
-* Protein - 0.5 g
-* Carbohydrates - 17 g
-
-## PACKING:
-
-* Mango peeled, pitted, halves.
-* Vacuum-sealed bag - 500g ± 3%, 4-6 halves.
-* Carton - 15kg ± 3%, 30 bags.
-
-## STORAGE:
+## Storage:
 
 Shelf life - 24 months in the original unopened package at a temperature of -18С.
 After being thawed keep in the refrigerator at +2–5ªС for up to 48 hours.

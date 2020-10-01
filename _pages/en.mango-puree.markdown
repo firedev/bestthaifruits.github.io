@@ -19,8 +19,8 @@ tags:
   - High concentration of vitamins
 package:
   - "100% Mango Puree / Pulp"
-  - "Vacuum Bag 500g / 1000 g"
-  - "Carton 15kg / 30 or 15 Packs"
+  - "Vacuum Bag 500g"
+  - "Carton 12.5kg / 25 Packs"
 gallery:
   - /images/mango-puree/mango-puree_1.jpg
   - /images/mango-puree/mango-puree_2.jpg
@@ -46,17 +46,6 @@ prevent the risk of depression.
 * Country of Origin: Thailand
 * Quality: Premium
 * Availability: Year-round
-
-## Nutrition facts per 100g
-
-* Energy content - 65 kCal
-* Fat - 0.3 g Protein - 0.5 g Carbohydrates - 17 g
-
-## Packing
-
-* 100% Mango Puree / Pulp
-* Vacuum-sealed bag — 500g / 1000g
-* Shipping — Carton 15kg ±3%, 30 / 15 bags.
 
 ## Storage
 

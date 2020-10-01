@@ -11,18 +11,18 @@ layout: default
       <div class="h3 subtitle"><span class="bg-{{page.slug}}">{{page.subtitle}}</span></div>
       <br />
       {% for tag in page.tags %}
-        <div class="bg-{{page.slug}} nowrap p1 mr1 mb1 inline-block">
-          <i class="fa fa-check"></i>
-          {{tag}}
-        </div>
-        <br />
+      <div class="bg-{{page.slug}} nowrap p1 mr1 mb1 inline-block">
+        <i class="fa fa-check"></i>
+        {{tag}}
+      </div>
+      <br />
       {% endfor %}
       {% for tag in page.package %}
-        <div class="bg-white nowrap p1 mr1 mb1 inline-block">
-          <i class="fa fa-check"></i>
-          {{tag}}
-        </div>
-        <br/>
+      <div class="bg-white nowrap p1 mr1 mb1 inline-block">
+        <i class="fa fa-check"></i>
+        {{tag}}
+      </div>
+      <br/>
       {% endfor %}
       <div class="p1 md-show"></div>
     </div>
@@ -92,6 +92,11 @@ layout: default
       </header>
       <div>
         {{ content }}
+
+        {% include fruit/package.html %}
+
+        {% include fruit/nutrition.html %}
+
       </div>
       <div class="my4 center">
         <a class="rounded h2 bg-orange white py1 px3 inline-flex align-center" href="/media/{{page.slug}}-{{page.lang}}.pdf">

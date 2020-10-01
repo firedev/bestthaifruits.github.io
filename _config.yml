@@ -50,13 +50,15 @@ t:
       title: Premium Thai Fruits
       subtitle: Individual Quick Freezing and Delivery Around the World
     nutrition:
-      info: Nutrition Facts for 100g
+      info: Nutrition Facts per 100g
       calories: Calories
       fat: Fat
       protein: Protein
       carbs: Carbohydrate
       g: g
       kcal: kCal
+    package:
+      info: Package and Shipping
     company:
       line_before:
       before:
@@ -86,6 +88,8 @@ t:
       carbs: Углеводы
       g: г
       kcal: ккал
+    package:
+      info: Упаковка и загрузка
     company:
       line_before: Представитель в России
       before: ООО

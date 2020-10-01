@@ -14,7 +14,7 @@ nutrition:
   protein: "0,5"
   carbs: 17
 tags:
-  - Pitted mango slice on a stick
+  - Peeled mango slice on a stick
   - 100% Natural Mango fruit
   - Healthy dessert
 package:
@@ -44,19 +44,6 @@ Healthy Ice cream, guilt-free dessert and natural antidepressant.
 * Quality: Premium
 * Availability: Year-round
 
-## NUTRITION FACTS PER 100G
-
-* Energy content - 65 kCal
-* Fat - 0.3 g
-* Protein - 0.5 g
-* Carbohydrates - 17 g
-
-## PACKING:
-
-* Mango peeled, pitted, on a stick
-* Weight - 70g
-* Shipping - Carton 11kg / 120 packs
-
-## STORAGE:
+## Storage:
 
 Shelf life - 24 months in the original unopened package at a temperature of -18°C.

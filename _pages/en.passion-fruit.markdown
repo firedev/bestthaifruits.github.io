@@ -20,7 +20,7 @@ tags:
 package:
   - "100% Passion Fruit Pulp"
   - "Vacuum Bag 500g"
-  - "Carton 15kg / 30 Packs"
+  - "Carton 12.5kg / 25 Packs"
 gallery:
   - /images/passion-fruit/passion-fruit_1.jpg
   - /images/passion-fruit/passion-fruit_2.jpg
@@ -45,19 +45,6 @@ Product: THAI PASSION FRUIT PULP
 Country of origin: Thailand
 Grade: Premium
 Availability: All Year Round
-
-## Nutrition facts per 100g
-
-* Energy content — 97 kCal
-* Fat — 0.7 g
-* Protein — 2.2 g
-* Carbohydrates — 23 g
-
-## Packing
-
-* Passion fruit pulp, not additives or preservatives
-* Vacuum-sealed bag - 500g
-* Carton - 15kg, 30 bags.
 
 ## Storage
 

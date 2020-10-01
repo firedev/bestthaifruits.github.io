@@ -18,7 +18,7 @@ tags:
   - Strengthens blood vessels
   - Improves digestion
 package:
-  - "Weight 60 — 90 g"
+  - "Peeled Fruits 60 — 90 g"
   - "Vacuum Bag 500 g / 6 — 8 pcs"
   - "Carton 12kg / 24 Packs"
 gallery:
@@ -46,20 +46,6 @@ on the table with any diet!
 * Country of Origin: Thailand
 * Quality: Premium
 * Availability: Year-round
-
-## Nutrition facts per 100g
-
-* Calories – 50 kCal
-* Fat – 0,1 g
-* Protein – 0,5 g
-* Carbohydrate – 13 g
-* Sodium – 1,0 g
-
-## Packing
-
-* Fruits cleaned and peeled, 70-100g each.
-* Vacuum-sealed bag – 500g ±3%, 6-8 pcs.
-* Carton - 12kg ±3%, 24 bags.
 
 ## Storage
 

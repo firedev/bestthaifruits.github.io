@@ -1,0 +1,9 @@
+<h2>
+  <i class="fa fa-pallet orange"></i> {{ site.t[page.lang].package.info }}
+</h2>
+
+<ul>
+  {% for tag in page.package %}
+  <li>{{ tag }}</li>
+  {% endfor %}
+</ul>
