@@ -1,5 +1,5 @@
 lang: en
-url: "https://bestthaifruits.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: 'https://bestthaifruits.com' # the base hostname & protocol for your site, e.g. http://example.com
 
 collections:
   fruits:
@@ -11,29 +11,30 @@ collections:
     sort_by: position
 
 partners:
+  ews.ru:
+  x5.ru:
+  vprok.ru:
   lavka.yandex:
   eda.yandex:
-    link: https://eda.yandex/lavka/?category=15984521ecc0421293343f0f90f14843000100010001&isGrocery=true
+    link: 'https://eda.yandex/lavka/?category=15984521ecc0421293343f0f90f14843000100010001&isGrocery=true'
   tvoydom.ru:
   vkusvill.ru:
-    link: https://vkusvill.ru/goods/vkusvillays/ovoshchi_frukty_yagody_griby_zamorozhennye/
+    link: 'https://vkusvill.ru/goods/vkusvillays/ovoshchi_frukty_yagody_griby_zamorozhennye/'
   icevkusvill.ru:
   globalfoods.ru:
-    link: globalfoods.ru/catalog/?q=bestthaifruits
+    link: 'http://globalfoods.ru/catalog/?q=bestthaifruits'
   delikateska.ru:
   freshfrost.ru:
   standart-mitino.ru:
 
 defaults:
   #languages
-  -
-    scope:
-      path: ""
+  - scope:
+      path: ''
     values:
       lang: en
       layout: default
-  -
-    scope:
+  - scope:
       path: ru
     values:
       lang: ru
@@ -66,8 +67,8 @@ t:
       after: Co. Ltd.
       address: 53/36 Moo 2, Vichit, Muang, Phuket, Thailand 83000
       email: info@bestthaifruits.com
-      phone1: +7-964-931-3480
-      phone2: +668-0707-3842
+      phone1: +668-0707-3842
+      # phone1: +7-964-931-3480
       whatsapp: 79649313480
       line: bestthaifruits
   ru:
@@ -97,7 +98,7 @@ t:
       after:
       address: ИНН&nbsp;7734433970 ОГРН&nbsp;1207700133475
       email: ru@bestthaifruits.com
-      phone1: +7-916-244-0203
-      phone2: +7-926-737-4141
-      whatsapp: 79162440203
+      phone1: +7-906-705-80-57
+      phone2:
+      whatsapp: 79067058057
       line:

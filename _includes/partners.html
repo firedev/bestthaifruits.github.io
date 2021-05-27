@@ -2,9 +2,10 @@
   <div class="flex flex-wrap justify-center">
     {% for partner in site.partners %}
     <div class="flex-1 col-6 md-col-4 flex flex-column p my1 button-hover">
-      {% assign link = partner[1].link | default: partner[0] %}
+      {% assign default_link = "http://" | append: partner[0] %}
+      {% assign link = partner[1].link | default: default_link %}
       {% assign domain = partner[1].domain | default: partner[0] %}
-      <a href="http://{{link}}">
+      <a href="{{link}}">
         <div class="contain" style="height: 3rem; background-image: url(/images/partners/{{domain}}.png)"></div>
         <div class="my1">
         {{domain}}
