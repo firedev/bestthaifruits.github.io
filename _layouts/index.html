@@ -14,31 +14,21 @@ layout: default
 
 <div class="md-flex mx-auto bg-white relative flex-wrap">
   {% for p in pages %}
-    <a href="{{ p.permalink }}" class="block black col md-col-6 lg-col-4 px3 py4 bg-{{p.slug}}-img cover">
-      <div class="lg-show pt4"></div>
-      <div class="h1 title squeeze"><span class="bg-{{p.slug}} px bold uppercase">{{ p.title }}</span></div>
-      {% if p.subtitle %}
-        <div><span class="h3 bg-{{p.slug}} px subtitle">{{ p.subtitle }}</span></div>
-      {% endif %}
-      {% include unavailable.html %}
-      <div class="py4"></div>
-      <div class="lg-show pb4"></div>
-    </a>
+  <a href="{{ p.permalink }}" class="block black col md-col-6 lg-col-4 px3 py4 bg-{{p.slug}}-img cover">
+    <div class="lg-show pt4"></div>
+    <div class="h1 title squeeze"><span class="bg-{{p.slug}} px bold uppercase">{{ p.title }}</span></div>
+    {% if p.subtitle %}
+    <div><span class="h3 bg-{{p.slug}} px subtitle">{{ p.subtitle }}</span></div>
+    {% endif %}
+    {% include unavailable.html %}
+    <div class="py4"></div>
+    <div class="lg-show pb4"></div>
+  </a>
   {% endfor %}
 </div>
 <div class="pb bg-orange"></div>
 <div class="mx-auto">
   {% include instagram.html %}
-
-  <div class="my4 flex flex-wrap justify-center">
-    {% for fruit in pages %}
-      <div class="p1">
-        <a class="block rounded h3 bg-orange white py1 px3 inline-flex align-center" href="/media/{{fruit.slug}}-{{page.lang}}.pdf">
-          <i class="fa m1 h1 pr2 fa-cloud-download-alt"></i>
-          {{fruit.slug | capitalize}} {{page.lang}}
-        </a>
-      </div>
-    {% endfor %}
-  </div>
+  {% include downloads.html %}
 </div>
 <div class="pb bg-orange"></div>
