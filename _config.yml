@@ -98,24 +98,33 @@ t:
     package:
       info: Упаковка и загрузка
     companies:
-      - line_before: Представитель Россия Москва
-        before: ООО
-        title: Бест Тай Фрут Рус
-        after:
-        address: ИНН&nbsp;7734433970 ОГРН&nbsp;1207700133475
-        email: ru@bestthaifruits.com
-        phone1: +7-906-705-80-57
-        phone2:
-        whatsapp: 79067058057
-        line:
+      # - line_before: Представитель Россия Москва
+      #   before: ООО
+      #   title: Бест Тай Фрут Рус
+      #   after:
+      #   address: ИНН&nbsp;7734433970 ОГРН&nbsp;1207700133475
+      #   email: ru@bestthaifruits.com
+      #   phone1: +7-906-705-80-57
+      #   phone2:
+      #   whatsapp: 79067058057
+      #   line:
 
-      - line_before: Представитель Россия Дальний Восток
-        before: ООО
-        title: Бест Тай Фрут ДВ
-        after:
-        address: ИНН&nbsp;4100037097 ОГРН&nbsp;1214100000344
-        email: dv@bestthaifruits.com
-        phone1: +7-909-831-77-41
-        phone2:
-        whatsapp: 79098317741
-        line:
+      # - line_before: Представитель Россия Дальний Восток
+      #  before: ООО
+      #  title: Бест Тай Фрут ДВ
+      #  after:
+      #  address: ИНН&nbsp;4100037097 ОГРН&nbsp;1214100000344
+      #  email: dv@bestthaifruits.com
+      #  phone1: +7-909-831-77-41
+      #  phone2:
+      #  whatsapp: 79098317741
+      #  line:
+      - line_before:
+        before:
+        title: Best Thai Fruit
+        after: Co. Ltd.
+        address: 53/36 Moo 2, Vichit, Muang, Phuket, Thailand 83000
+        email: info@bestthaifruits.com
+        phone1: +668-0707-3842
+        whatsapp: 79604929263
+        line: bestthaifruits
