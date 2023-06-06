@@ -52,7 +52,7 @@
     </div>
   </a>
   <nav>
-    <div class="justify-center flex flex-wrap mx-auto">
+    <div class="justify-center flex flex-wrap mx-auto bg-about">
       {% assign pages = site.pages | where: "lang", page.lang | where: "hide", nil %}
       {% for p in pages %}
         {% if p.title %}
@@ -74,7 +74,7 @@
       {% endfor %}
     </div>
   </nav>
-  <div class="shadow mx-auto">
+  <div class="mx-auto">
     <div class="pb bg-orange bg-{{page.slug | default: 'orange'}}"></div>
 
     <main class="page-content" aria-label="Content">
