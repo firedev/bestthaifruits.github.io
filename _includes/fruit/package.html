@@ -1,5 +1,13 @@
+{% if page.storage %}
 <h2>
-  <i class="fa fa-pallet text-brand"></i> {{ site.t[page.lang].package.info }}
+  <i class="fa fa-snowflake text-brand"></i> {{ site.t[page.lang].storage.info }}
+</h2>
+
+<p>{{ page.storage }}</p>
+{% endif %}
+
+<h2>
+  <i class="fa fa-box text-brand"></i> {{ site.t[page.lang].package.info }}
 </h2>
 
 <ul>

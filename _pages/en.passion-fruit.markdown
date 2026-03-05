@@ -21,6 +21,7 @@ package:
   - "100% Passion Fruit Pulp"
   - "Vacuum Bag 500g"
   - "Carton 12.5kg / 25 Packs"
+storage: "Shelf life - 24 months in the original unopened package at a temperature of -18C. After being thawed keep in the refrigerator at +2-5C for up to 48 hours. Do not refreeze."
 gallery:
   - /images/passion-fruit/passion-fruit_1.jpg
   - /images/passion-fruit/passion-fruit_2.jpg
@@ -45,9 +46,3 @@ Product: THAI PASSION FRUIT PULP
 Country of origin: Thailand
 Grade: Premium
 Availability: All Year Round
-
-## Storage
-
-Shelf life - 24 months in the original unopened package at a temperature of -18С.
-After being thawed keep in the refrigerator at +2–5ªС for up to 48 hours.
-Do not refreeze.

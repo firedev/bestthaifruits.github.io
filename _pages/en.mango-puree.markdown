@@ -21,6 +21,7 @@ package:
   - "100% Mango Puree / Pulp"
   - "Vacuum Bag 500g"
   - "Carton 12.5kg / 25 Packs"
+storage: "Shelf life - 24 months in the original unopened package at a temperature of -18C. After being thawed keep in the refrigerator at +2-5C for up to 48 hours. Do not refreeze."
 gallery:
   - /images/mango-puree/mango-puree_1.jpg
   - /images/mango-puree/mango-puree_2.jpg
@@ -46,9 +47,3 @@ prevent the risk of depression.
 * Country of Origin: Thailand
 * Quality: Premium
 * Availability: Year-round
-
-## Storage
-
-Shelf life - 24 months in the original unopened package at a temperature of -18С.
-After being thawed keep in the refrigerator at +2–5ªС for up to 48 hours.
-Do not refreeze.

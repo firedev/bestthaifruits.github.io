@@ -20,6 +20,7 @@ tags:
 package:
   - "Weight 70g"
   - "Carton 8.4kg / 120 Packs"
+storage: "Shelf life - 24 months in the original unopened package at a temperature of -18°C."
 gallery:
   - /images/mango/mango_1.jpg
   - /images/mango/mango_2.jpg
@@ -43,7 +44,3 @@ Healthy Ice cream, guilt-free dessert and natural antidepressant.
 * Country of Origin: Thailand
 * Quality: Premium
 * Availability: Year-round
-
-## Storage:
-
-Shelf life - 24 months in the original unopened package at a temperature of -18°C.

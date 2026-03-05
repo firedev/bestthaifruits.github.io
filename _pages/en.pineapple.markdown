@@ -21,6 +21,7 @@ package:
   - "Peeled Fruits 60 — 90 g"
   - "Vacuum Bag 500 g / 6 — 8 pcs"
   - "Carton 12kg / 24 Packs"
+storage: "Shelf life - 24 months in the original unopened package at a temperature of -18C. After being thawed keep in the refrigerator at +2-5C for up to 48 hours. Do not refreeze."
 gallery:
   - /images/pineapple/pineapple_1.jpg
   - /images/pineapple/pineapple_2.jpg
@@ -46,9 +47,3 @@ on the table with any diet!
 * Country of Origin: Thailand
 * Quality: Premium
 * Availability: Year-round
-
-## Storage
-
-Shelf life - 24 months in the original unopened package at a temperature of -18С.
-After being thawed keep in the refrigerator at +2–5ªС for up to 48 hours.
-Do not refreeze.

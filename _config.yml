@@ -67,6 +67,8 @@ t:
       kcal: kCal
     package:
       info: Package and Shipping
+    storage:
+      info: Storage
     companies:
       - line_before:
         before:
@@ -97,6 +99,8 @@ t:
       kcal: ккал
     package:
       info: Упаковка и загрузка
+    storage:
+      info: Хранение
     companies:
       # - line_before: Представитель Россия Москва
       #   before: ООО

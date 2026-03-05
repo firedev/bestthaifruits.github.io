@@ -21,6 +21,7 @@ package:
   - "Peeled Mango Slices 80 — 120g"
   - "Vacuum Bag 500г / 4 &ndash; 6 halves"
   - "Carton 10kg / 20 Bags"
+storage: "Shelf life - 24 months in the original unopened package at a temperature of -18C. After being thawed keep in the refrigerator at +2-5C for up to 48 hours. Do not refreeze."
 gallery:
   - /images/mango/mango_1.jpg
   - /images/mango/mango_2.jpg
@@ -49,9 +50,3 @@ prevent the risk of depression.
 * Country of Origin: Thailand
 * Quality: Premium
 * Availability: Year-round
-
-## Storage:
-
-Shelf life - 24 months in the original unopened package at a temperature of -18С.
-After being thawed keep in the refrigerator at +2–5ªС for up to 48 hours.
-Do not refreeze.
