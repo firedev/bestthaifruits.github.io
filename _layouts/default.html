@@ -3,102 +3,284 @@
 <html lang="{{ page.lang }}">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69016906-3"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-69016906-3"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'UA-69016906-3');
+      gtag("config", "UA-69016906-3");
     </script>
     <link rel="icon" type="image/png" href="/images/best-thai-fruits.png" />
-    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="telephone=no" />
     <meta name="yandex-verification" content="be58e243a47eaedd" />
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta property="og:title" content="{{page.title | default: t.title }}" />
-    <meta property="og:description" content="{{ page.description | default: t.description }}" />
+    <meta
+      property="og:description"
+      content="{{ page.description | default: t.description }}"
+    />
     <meta property="og:site_name" content="{{ t.title }}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{site.url}}{{page.permalink}}" />
     <meta property="og:image" content="{{site.url}}/images/16x9.png" />
-    <title>{% if page.title != empty %}{{ page.title }} | {% endif %}{{ t.title }}</title>
-    <meta name="google-site-verification" content="f-YEKvNR-QK5_3QE44BbQeOhW_QQA9Z2jwDklmw7Hds" />
-    <meta name="viewport" content="width=450">
-    <meta name="description" content="{{ page.description | default: t.description }}"/>
+    <title>
+      {% if page.title != empty %}{{ page.title }} | {% endif %}{{ t.title }}
+    </title>
+    <meta
+      name="google-site-verification"
+      content="f-YEKvNR-QK5_3QE44BbQeOhW_QQA9Z2jwDklmw7Hds"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="{{ page.description | default: t.description }}"
+    />
     {% include alternate.html %}
-    <link href="/fruits.css?{{ page.date | date: "%Y-%m-%d" }}" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.min.css" rel="stylesheet">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-brand: #ff3300;
+        --color-orange: #ff3300;
+        --color-red: #ff0000;
+        --color-pineapple: #ffde51;
+        --color-pineapple-stick: #ffde51;
+        --color-mango: #fdc629;
+        --color-mango-stick: #fdc629;
+        --color-mango-puree: #fdc629;
+        --color-passion-fruit: #ffa900;
+        --color-avocado: #cfe602;
+        --color-about: #e19600;
+        --color-navy: #3c6eae;
+        --color-light-yellow: #ffeebb;
+        --color-light-orange: #ff9966;
+        --color-whatsapp: #25d366;
+        --color-line: #00c300;
+        --color-instagram: #d6249f;
+      }
+
+      @layer base {
+        body {
+          font-family: "Open Sans", sans-serif;
+        }
+        a {
+          text-decoration: none;
+          color: #ff3300;
+        }
+        h1,
+        h2,
+        h3 {
+          margin-top: 0;
+          margin-bottom: 1rem;
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+
+      /* Responsive heading sizes */
+      .h1 {
+        font-size: 1.75rem;
+      }
+      .h2 {
+        font-size: 1.25rem;
+      }
+      .h3 {
+        font-size: 1.15rem;
+      }
+
+      @media (min-width: 40rem) {
+        .h1 {
+          font-size: 3rem;
+        }
+        .h2 {
+          font-size: 2rem;
+        }
+        .h3 {
+          font-size: 1.25rem;
+        }
+        .crop-to-fit img {
+          width: 15rem;
+          height: 15rem;
+        }
+        .flag {
+          height: 1rem;
+        }
+        .icon {
+          font-size: 2rem;
+        }
+      }
+
+      @media (min-width: 90rem) {
+        body {
+          font-size: 20px;
+        }
+        .h1 {
+          font-size: 4rem;
+        }
+        .h2 {
+          font-size: 2.5rem;
+        }
+        .h3 {
+          font-size: 1.5rem;
+        }
+      }
+
+      /* Custom utilities without direct Tailwind equivalents */
+      .squeeze {
+        letter-spacing: -0.05em;
+      }
+      .flag {
+        height: 1.5rem;
+      }
+      .icon {
+        font-size: 2em;
+      }
+
+      /* Product background images */
+      .bg-avocado-img {
+        background-image: url(/images/avocado.jpg);
+      }
+      .bg-mango-img {
+        background-image: url(/images/mango.jpg);
+      }
+      .bg-mango-stick-img {
+        background-image: url(/images/mango-stick.jpg);
+      }
+      .bg-mango-puree-img {
+        background-image: url(/images/mango-puree.jpg);
+      }
+      .bg-passion-fruit-img {
+        background-image: url(/images/passion-fruit.jpg);
+      }
+      .bg-pineapple-img {
+        background-image: url(/images/pineapple.jpg);
+      }
+      .bg-pineapple-stick-img {
+        background-image: url(/images/pineapple-stick.jpg);
+      }
+      .bg-about-img {
+        background-image: url(/images/fruits-logo.png);
+        background-size: contain !important;
+      }
+
+      /* Special components */
+      .shadow-up {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 3rem;
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+      }
+
+      .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+      }
+      .embed-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      /* Gallery */
+      .crop-to-fit img {
+        width: 9rem;
+        height: 9rem;
+        object-fit: cover;
+        object-position: center top;
+      }
+
+      /* Ratio boxes for gallery */
+      .ratio-1x1 {
+        padding-bottom: 100%;
+      }
+    </style>
   </head>
   <div class="mx-auto relative">
-    <div class="absolute right-0 p1">
-      {% include lang_nav.html %}
-    </div>
+    <div class="absolute right-0 p-2">{% include lang_nav.html %}</div>
   </div>
-  <a class="black" href="/{% if page.lang != site.lang %}{{page.lang}}{% endif %}">
-    <div class="flex justify-center mx-auto pt2 bg-light-yellow py2">
-      <div class="col col-2 lg-col-1">
+  <a
+    class="text-black"
+    href="/{% if page.lang != site.lang %}{{page.lang}}{% endif %}"
+  >
+    <div class="flex justify-center mx-auto pt-4 bg-light-yellow py-4">
+      <div class="w-1/6 lg:w-1/12 shrink-0">
         <img src="/images/fruits-logo.svg" class="block" />
       </div>
-      <div class="hide md-flex flex-column justify-end">
-        <div class="h1 squeeze bold uppercase">
+      <div class="hidden md:flex flex-col justify-end">
+        <div
+          class="h1 squeeze font-bold uppercase leading-12"
+          style="letter-spacing: -0.066em; margin-left: -0.05em"
+        >
           {{ t.layout.title }}
         </div>
-        <div class="h3">
-          {{ t.layout.subtitle }}
-        </div>
+        <div class="h3">{{ t.layout.subtitle }}</div>
       </div>
     </div>
   </a>
   <nav>
     <div class="justify-center flex flex-wrap mx-auto bg-about">
-      {% assign pages = site.pages | where: "lang", page.lang | where: "hide", nil %}
-      {% for p in pages %}
-        {% if p.title %}
-          <a href="{{ p.permalink }}"
-             class="squeeze
-             col-4
-             uppercase h2 px2 md-px2 py1 black
+      {% assign pages = site.pages | where: "lang", page.lang | where: "hide",
+      nil %} {% for p in pages %} {% if p.title %}
+      <a
+        href="{{ p.permalink }}"
+        class="squeeze
+             w-1/3
+             uppercase h2 px-4 md:px-8 py-2 text-black
              bg-{{p.slug | default: 'red' }}
              {% if p.url == page.permalink %}
-               bold
-             {% else %}
+               font-bold
              {% endif %}
-             ">
-            <span class="{% if p.url != page.permalink %}fg-{{p.slug}}{%endif%}">
-              {{ p.title }}
-            </span>
-          </a>
-        {% endif %}
-      {% endfor %}
+             "
+      >
+        {{ p.title }}
+      </a>
+      {% endif %} {% endfor %}
     </div>
   </nav>
   <div class="mx-auto">
-    <div class="pb bg-orange bg-{{page.slug | default: 'orange'}}"></div>
+    <div class="pb-1 bg-orange bg-{{page.slug | default: 'orange'}}"></div>
 
-    <main class="page-content" aria-label="Content">
-      {{ content }}
-    </main>
-
+    <main class="page-content" aria-label="Content">{{ content }}</main>
   </div>
   {% include partners.html %}
-  <div class="container mx-auto py4">
-    <div class="md-flex bg-white mxn1 py3 align-start overflow-hidden">
-      <div class="px3 mb2 md-show">
+  <div class="max-w-7xl mx-auto py-16">
+    <div class="md:flex bg-white py-8 items-start overflow-hidden">
+      <div class="px-8 mb-4 hidden md:block">
         <div style="width: 9rem">
-          <img src="/images/logo/en.svg" class="block"/>
+          <img src="/images/logo/en.svg" class="block" />
         </div>
       </div>
       {% include company.html %}
     </div>
   </div>
-  <script
-    src="https://code.jquery.com/jquery-2.2.4.min.js"
-    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/js/jquery.swipebox.min.js"></script>
-  <script type="text/javascript">
-    ;( function( $ ) { $( '.swipebox' ).swipebox(); } )( jQuery );
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      GLightbox({ selector: ".glightbox" });
+    });
   </script>
 </html>

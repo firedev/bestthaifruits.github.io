@@ -1,18 +1,18 @@
 ---
 layout: default
 ---
-<div class="container mx-auto">
+<div class="max-w-7xl mx-auto">
   <div class='embed-container'><iframe src='https://www.youtube.com/embed/KXlIQK06g6w' frameborder='0' allowfullscreen></iframe></div>
 </div>
-<div class="pb bg-orange"></div>
-<div class="md-flex container mx-auto">
-  <div class="col auto bg-white px2 md-px4 py3">
+<div class="pb-1 bg-orange"></div>
+<div class="md:flex max-w-7xl mx-auto">
+  <div class="flex-auto bg-white px-4 md:px-16 py-8">
     {{ content }}
     {% include instagram.html %}
     {% assign t = site.t.en %}
     {% include company.html %}
   </div>
-  <div class="md-show col col-3 bg-navy flex align-center">
+  <div class="hidden md:block w-1/4 shrink-0 bg-navy flex items-center">
     <img src="/images/thailand.svg" />
   </div>
 </div>

@@ -2,93 +2,93 @@
 layout: default
 ---
 
-<div class="{{page.slug}} relative mx-auto bg-white bg-{{page.slug}}-img cover">
-  <div class="lg-show pt4"></div>
-  <div class="container mx-auto">
-    <div class="px2 md-px4 py3 relative">
-      <div class="p1 md-show"></div>
-      <div class="h1 title"><span class="extrabold uppercase bg-{{page.slug}}" style="letter-spacing: -2px">{{page.title}}</span></div>
-      <div class="h3 subtitle"><span class="bg-{{page.slug}}">{{page.subtitle}}</span></div>
+<div class="{{page.slug}} relative mx-auto bg-white bg-{{page.slug}}-img bg-cover bg-center">
+  <div class="hidden lg:block pt-16"></div>
+  <div class="max-w-7xl mx-auto">
+    <div class="px-4 md:px-16 py-8 relative">
+      <div class="p-2 hidden md:block"></div>
+      <div class="h1"><span class="font-extrabold uppercase bg-{{page.slug}}" style="letter-spacing: -2px">{{page.title}}</span></div>
+      <div class="h3"><span class="bg-{{page.slug}}">{{page.subtitle}}</span></div>
       <br />
       {% for tag in page.tags %}
-      <div class="bg-{{page.slug}} nowrap p1 mr1 mb1 inline-block">
+      <div class="bg-{{page.slug}} whitespace-nowrap p-2 mr-2 mb-2 inline-block">
         <i class="fa fa-check"></i>
         {{tag}}
       </div>
       <br />
       {% endfor %}
       {% for tag in page.package %}
-      <div class="bg-white nowrap p1 mr1 mb1 inline-block">
+      <div class="bg-white whitespace-nowrap p-2 mr-2 mb-2 inline-block">
         <i class="fa fa-check"></i>
         {{tag}}
       </div>
       <br/>
       {% endfor %}
-      <div class="p1 md-show"></div>
+      <div class="p-2 hidden md:block"></div>
     </div>
-    <div class="p2 mt3 auto container">
-      <div class="md-show h3 center pt">
-        <span class="p bg-{{page.slug}}">
+    <div class="p-4 mt-8 flex-auto max-w-7xl">
+      <div class="hidden md:block h3 text-center pt-1">
+        <span class="p-1 bg-{{page.slug}}">
           {{ site.t[page.lang].nutrition.info }}
       </div>
-      <div class="py2 flex flex-wrap justify-center mx-auto">
-        <div class="p">
-          <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
-            <span class="small pt1">
+      <div class="py-4 flex flex-wrap justify-center mx-auto">
+        <div class="p-1">
+          <div class="rounded-full bg-white w-24 h-24 text-center shadow-lg flex flex-col justify-center">
+            <span class="text-xs pt-2">
               {{ site.t[page.lang].nutrition.fat }}
             </span>
-            <div class="h3 bold">
+            <div class="h3 font-bold">
               {{page.nutrition.fat}}{{ site.t[page.lang].nutrition.g }}
             </div>
           </div>
         </div>
-        <div class="p">
-          <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
-            <span class="small pt1">
+        <div class="p-1">
+          <div class="rounded-full bg-white w-24 h-24 text-center shadow-lg flex flex-col justify-center">
+            <span class="text-xs pt-2">
               {{ site.t[page.lang].nutrition.carbs }}
             </span>
-            <div class="h3 bold">
+            <div class="h3 font-bold">
               {{page.nutrition.carbs}}{{ site.t[page.lang].nutrition.g }}
             </div>
           </div>
         </div>
-        <div class="p">
-          <div class="round bg-white w4 h4 center shadow flex flex-column justify-center">
-            <span class="small pt1">
+        <div class="p-1">
+          <div class="rounded-full bg-white w-24 h-24 text-center shadow-lg flex flex-col justify-center">
+            <span class="text-xs pt-2">
               {{ site.t[page.lang].nutrition.protein }}
             </span>
-            <div class="h3 bold">
+            <div class="h3 font-bold">
               {{page.nutrition.protein}}{{ site.t[page.lang].nutrition.g }}
             </div>
           </div>
         </div>
-        <div class="p">
-          <div class="round bg-{{page.slug}} w4 h4 center shadow flex flex-column justify-center">
-            <span class="small pt1">
+        <div class="p-1">
+          <div class="rounded-full bg-{{page.slug}} w-24 h-24 text-center shadow-lg flex flex-col justify-center">
+            <span class="text-xs pt-2">
               {{ site.t[page.lang].nutrition.calories }}
             </span>
-            <div class="h3 bold">
+            <div class="h3 font-bold">
               {{page.nutrition.kcal}}{{ site.t[page.lang].nutrition.kcal }}
             </div>
           </div>
         </div>
-        <div class="p1 md-show"></div>
+        <div class="p-2 hidden md:block"></div>
       </div>
     </div>
-    <div class="lg-show pb4 pt4"></div>
+    <div class="hidden lg:block pb-16 pt-16"></div>
   </div>
   <div class="shadow-up"></div>
 </div>
 
-<div class="flex container mx-auto">
-  <div class="col col-12 auto bg-white px2 md-px4 py3 relative">
+<div class="flex max-w-7xl mx-auto">
+  <div class="w-full flex-auto bg-white px-4 md:px-16 py-8 relative">
     <div class="absolute" style="right: 10rem; top: -2rem;">
       {% include unavailable.html %}
     </div>
     <article>
-      <div class="right md-show pl4"><img src="/images/logo/{{page.slug}}-logo.svg" /></div>
-      <header class="hide">
-        <h1 class="h1 bold uppercase">{{ page.title | escape }}</h1>
+      <div class="float-right hidden md:block pl-16"><img src="/images/logo/{{page.slug}}-logo.svg" /></div>
+      <header class="hidden">
+        <h1 class="h1 font-bold uppercase">{{ page.title | escape }}</h1>
       </header>
       <div>
         {{ content }}
@@ -98,7 +98,7 @@ layout: default
         {% include fruit/nutrition.html %}
 
       </div>
-      <div class="my4 center">
+      <div class="my-16 text-center">
         {% include downloads.html %}
       </div>
     </article>

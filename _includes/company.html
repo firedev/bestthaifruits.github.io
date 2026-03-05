@@ -1,49 +1,49 @@
 <div class="flex-1">
   {% for company in t.companies %}
-  <div class="md-flex flex-1 flex-wrap mxn1 px1 align-start h3 py2 mb2">
-    <div class="flex-1 align-end px1 mb2">
-      <div class="flex align-start">
-        <div class="pt mr1">
-          <i class="h1 fas fa-map-marker-alt orange"></i>
+  <div class="md:flex flex-1 flex-wrap px-2 items-start h3 py-4 mb-4">
+    <div class="flex-1 items-end px-2 mb-4">
+      <div class="flex items-start">
+        <div class="pt-1 mr-2">
+          <i class="h1 fas fa-map-marker-alt text-brand"></i>
         </div>
         <div>
-          <small class="absolute mtn3 pt1 nowrap">{{company.line_before}}</small>
-          <div class="nowrap">
-            {{company.before}} <span class="extrabold">{{company.title}}</span> {{company.after}}
+          <small class="absolute -mt-8 pt-2 whitespace-nowrap">{{company.line_before}}</small>
+          <div class="whitespace-nowrap">
+            {{company.before}} <span class="font-extrabold">{{company.title}}</span> {{company.after}}
           </div>
           {{company.address}}
-          <div class="mb1"></div>
-          <div class="flex align-center">
-            <a class="whatsapp-color" href="https://wa.me/{{company.whatsapp}}?text=bestthaifruits.com"><i
-                class="mr1 h2 icon fab fa-whatsapp-square"></i></a>
+          <div class="mb-2"></div>
+          <div class="flex items-center">
+            <a class="text-whatsapp" href="https://wa.me/{{company.whatsapp}}?text=bestthaifruits.com"><i
+                class="mr-2 h2 icon fab fa-whatsapp-square"></i></a>
             {% if company.line %}
-            <a class="line-color" href="line://ti/p/{{company.line}}"><i class=" mr1 h2 icon fab fa-line"></i></a>
+            <a class="text-line" href="line://ti/p/{{company.line}}"><i class=" mr-2 h2 icon fab fa-line"></i></a>
             {% endif %}
-            <a class="instagram flex align-center" href="https://www.instagram.com/bestthaifruits/"><i
-                class="h2 icon fab fa-instagram mr"></i> bestthaifruits</a>
+            <a class="text-instagram flex items-center" href="https://www.instagram.com/bestthaifruits/"><i
+                class="h2 icon fab fa-instagram mr-1"></i> bestthaifruits</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="flex-1 align-end mb2 px1">
-      <div class="mb2">
+    <div class="flex-1 items-end mb-4 px-2">
+      <div class="mb-4">
         <div>
-          <a class="black flex align-center" href="tel:{{company.phone1}}"><i
-              class="h2 mr1 orange fa fa-phone-square-alt"></i> {{company.phone1}}</a>
+          <a class="text-black flex items-center" href="tel:{{company.phone1}}"><i
+              class="h2 mr-2 text-brand fa fa-phone-square-alt"></i> {{company.phone1}}</a>
         </div>
         {% if company.phone2 %}
         <div>
-          <a class="black flex align-center" href="tel:{{company.phone2}}"><i
-              class="h2 mr1 orange fa fa-phone-square-alt"></i> {{company.phone2}}</a>
+          <a class="text-black flex items-center" href="tel:{{company.phone2}}"><i
+              class="h2 mr-2 text-brand fa fa-phone-square-alt"></i> {{company.phone2}}</a>
         </div>
         {% endif %}
         <div>
-          <a class="black flex align-center" href="mailto:{{company.email}}"><i
-              class="h2 mr1 orange fa fa-envelope-square"></i> {{company.email}}</a>
+          <a class="text-black flex items-center" href="mailto:{{company.email}}"><i
+              class="h2 mr-2 text-brand fa fa-envelope-square"></i> {{company.email}}</a>
         </div>
 
       </div>
-      {% if !company.line_before %}<div class="pt2"></div>{% endif %}
+      {% if !company.line_before %}<div class="pt-4"></div>{% endif %}
     </div>
 
   </div>
