@@ -14,7 +14,7 @@ layout: default
 
 <div class="md:flex mx-auto bg-white relative flex-wrap justify-center">
   {% for p in pages %}
-  <a href="{{ p.permalink }}" class="block text-black md:w-1/2 lg:w-1/3 px-8 py-16 bg-{{p.slug}}-img bg-cover bg-center">
+  <a href="{{ p.permalink }}" class="product-card block text-black md:w-1/2 lg:w-1/3 px-8 py-16 bg-{{p.slug}}-img bg-cover bg-center relative overflow-hidden">
     <div class="hidden lg:block pt-16"></div>
     <div class="h1 squeeze"><span class="bg-{{p.slug}} px-1 font-bold uppercase">{{ p.title }}</span></div>
     {% if p.subtitle %}
