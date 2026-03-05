@@ -10,6 +10,7 @@ description: >-
 image: /images/passion-fruit/passion-fruit_1.jpg
 keywords: frozen passion fruit pulp, Thai passion fruit, passion fruit puree, IQF passion fruit, frozen tropical fruit, passion fruit for desserts, buy passion fruit pulp
 permalink: /passion-fruit
+download: Frozen Thai Passion Fruit
 nutrition:
   kcal: 97
   fat: "0,7"

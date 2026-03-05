@@ -84,13 +84,12 @@ layout: default
   </div>
 </div>
 
-<div class="flex max-w-7xl mx-auto">
-  <div class="w-full flex-auto bg-white px-4 md:px-16 py-8 relative">
+<div class="md:flex max-w-7xl mx-auto">
+  <div class="flex-auto bg-white px-4 md:px-16 py-8 relative">
     <div class="absolute" style="right: 10rem; top: -2rem;">
       {% include unavailable.html %}
     </div>
     <article>
-      <div class="float-right hidden md:block pl-16"><img src="/images/logo/{{page.slug}}-logo.svg" /></div>
       <header class="hidden">
         <h1 class="h1 font-bold uppercase">{{ page.title | escape }}</h1>
       </header>
@@ -106,6 +105,9 @@ layout: default
         {% include downloads.html %}
       </div>
     </article>
+  </div>
+  <div class="hidden md:flex w-1/4 shrink-0 bg-white items-start justify-center px-4 pt-8">
+    <img src="/images/logo/{{page.slug}}-logo.svg" />
   </div>
 </div>
 

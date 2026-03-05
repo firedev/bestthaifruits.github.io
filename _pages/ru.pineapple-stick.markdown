@@ -10,6 +10,7 @@ description: >-
 image: /images/pineapple-stick/pineapple_4.jpg
 keywords: ананас на палочке, замороженный ананас, мини ананас на палочке, тайский ананас Пуле, замороженные фрукты на палочке, полезный снэк
 permalink: /ru/pineapple-stick
+download: Frozen Thai Mini Pineapple on a Stick Phule
 nutrition:
   kcal: "50"
   fat: "0,1"

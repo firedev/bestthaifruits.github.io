@@ -10,6 +10,7 @@ description: >-
 image: /images/mango/mango_1.jpg
 keywords: манго на палочке, замороженное манго, натуральное мороженое манго, тайское манго на палочке, полезный десерт манго, замороженные фрукты на палочке
 permalink: /ru/mango-stick
+download: Frozen Thai Mango on a Stick
 nutrition:
   kcal: 65
   fat: "0,3"

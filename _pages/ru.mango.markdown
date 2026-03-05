@@ -10,6 +10,7 @@ description: >-
 image: /images/mango/mango_1.jpg
 keywords: замороженное манго, тайское манго, манго Нам Док Май, дольки манго, шоковая заморозка манго, IQF манго, купить замороженное манго
 permalink: /ru/mango
+download: Frozen Thai Mango Halves
 nutrition:
   kcal: 65
   fat: "0,3"

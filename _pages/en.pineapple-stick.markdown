@@ -10,6 +10,7 @@ description: >-
 image: /images/pineapple-stick/pineapple_4.jpg
 keywords: pineapple on a stick, frozen pineapple stick, Thai mini pineapple, Phulae pineapple, IQF frozen fruit, healthy frozen snack, tropical fruit on stick
 permalink: /pineapple-stick
+download: Frozen Thai Mini Pineapple on a Stick Phule
 nutrition:
   kcal: 50
   fat: "0,1"

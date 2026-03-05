@@ -10,6 +10,7 @@ description: >-
 image: /images/mango-puree/mango-puree_1.jpg
 keywords: frozen mango puree, mango pulp, Thai mango puree, Nam Dok Mai mango puree, IQF mango, natural mango pulp, frozen fruit puree
 permalink: /mango-puree
+download: Frozen Thai Mango Pulp
 nutrition:
   kcal: 65
   fat: "0,3"

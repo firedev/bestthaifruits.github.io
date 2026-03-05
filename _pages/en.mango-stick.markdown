@@ -10,6 +10,7 @@ description: >-
 image: /images/mango/mango_1.jpg
 keywords: mango on a stick, frozen mango stick, Thai mango ice cream, natural frozen dessert, Nam Dok Mai mango, healthy ice cream alternative, frozen fruit snack
 permalink: /mango-stick
+download: Frozen Thai Mango on a Stick
 nutrition:
   kcal: 65
   fat: "0,3"

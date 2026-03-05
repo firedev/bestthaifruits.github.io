@@ -10,6 +10,7 @@ description: >-
 image: /images/passion-fruit/passion-fruit_1.jpg
 keywords: маракуйя замороженная, мякоть маракуйи, тайская маракуйя, замороженная маракуйя пюре, купить маракуйю, passion fruit пюре, натуральная маракуйя
 permalink: /ru/passion-fruit
+download: Frozen Thai Passion Fruit
 nutrition:
   kcal: 97
   fat: "0,7"

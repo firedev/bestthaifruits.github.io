@@ -353,7 +353,7 @@
           <a
             href="{{ p.permalink }}"
             style="--nav-color: var(--color-{{p.slug}})"
-            class="nav-link text-center uppercase font-semibold px-3 md:px-4 py-3 text-white
+            class="nav-link text-center uppercase font-semibold text-xs md:text-sm px-2 md:px-3 py-3 text-white whitespace-nowrap
                    {% if p.url == page.permalink %}active{% endif %}"
           >
             {{ p.title }}
@@ -366,7 +366,6 @@
   <div class="mx-auto">
     <main class="page-content" aria-label="Content">{{ content }}</main>
   </div>
-  {% include partners.html %}
   {% unless page.layout == "about" %}
   <div class="max-w-7xl mx-auto py-16">
     <div class="md:flex bg-white py-8 items-start overflow-hidden">

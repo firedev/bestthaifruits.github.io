@@ -10,6 +10,7 @@ description: >-
 image: /images/pineapple/pineapple_1.jpg
 keywords: замороженные ананасы, мини ананас тайский, ананас Пуле, шоковая заморозка ананас, IQF ананас, купить замороженные ананасы, тайские фрукты
 permalink: /ru/pineapple
+download: Frozen Thai Mini Pineapple Phule
 nutrition:
   kcal: "50"
   fat: "0,1"

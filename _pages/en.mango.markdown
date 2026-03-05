@@ -10,6 +10,7 @@ description: >-
 image: /images/mango/mango_1.jpg
 keywords: frozen Thai mango, Nam Dok Mai mango, IQF mango slices, frozen mango halves, premium Thai mango, buy frozen mango, tropical fruit delivery
 permalink: /mango
+download: Frozen Thai Mango Halves
 nutrition:
   kcal: 65
   fat: "0,3"

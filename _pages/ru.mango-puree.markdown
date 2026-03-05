@@ -10,6 +10,7 @@ description: >-
 image: /images/mango-puree/mango-puree_1.jpg
 keywords: пюре манго, мякоть манго, замороженное пюре манго, тайское манго пюре, Нам Док Май пюре, натуральная мякоть манго, купить пюре манго
 permalink: /ru/mango-puree
+download: Frozen Thai Mango Pulp
 nutrition:
   kcal: 65
   fat: "0,3"

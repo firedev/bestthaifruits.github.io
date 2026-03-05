@@ -10,6 +10,7 @@ description: >-
 image: /images/pineapple/pineapple_1.jpg
 keywords: frozen pineapple, Thai mini pineapple, Phulae pineapple, IQF pineapple, frozen tropical fruit, premium frozen fruit Thailand, buy frozen pineapple
 permalink: /pineapple
+download: Frozen Thai Mini Pineapple Phule
 nutrition:
   kcal: 50
   fat: "0,1"
