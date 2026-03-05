@@ -79,6 +79,9 @@
   
 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap&subset=cyrillic"
@@ -104,6 +107,7 @@
         --color-mango-puree: #fdc629;
         --color-passion-fruit: #ffa900;
         --color-avocado: #cfe602;
+        --color-franchise: #ffde51;
         --color-about: #ffffff;
         --color-navy: #3c6eae;
         --color-light-yellow: #ffeebb;
@@ -230,9 +234,14 @@
       .bg-pineapple-stick-img {
         background-image: url(/images/pineapple-stick.jpg);
       }
+      .bg-franchise-img {
+        background-image: url(/images/franchise/slide-01.jpg);
+      }
       .bg-about-img {
         background-image: url(/images/fruits-logo.png);
         background-size: contain !important;
+        background-repeat: no-repeat;
+        background-position: center;
       }
 
       /* Special components */
@@ -285,17 +294,9 @@
         background-color: var(--nav-color, #fff);
       }
 
-      /* Product card hover */
-      .product-card {
-        transition: transform 0.2s, box-shadow 0.2s;
-      }
-      .product-card:hover {
-        transform: scale(1.02);
-        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-        z-index: 1;
-      }
     </style>
   </head>
+  <body>
   <div class="mx-auto relative">
     <div class="absolute right-0 p-2">
 <nav>
@@ -362,6 +363,22 @@
     
     
     <div class="flex flex-wrap justify-center gap-1 mx-auto px-2">
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
         
           
@@ -541,9 +558,16 @@
     </div>
   </nav>
   <div class="mx-auto">
-    <main class="page-content" aria-label="Content"><div class="max-w-7xl text-center py-16">
-  <h1><strong>Page not found :(</strong></h1>
-  <p>The requested page could not be found.</p>
+    <main class="page-content" aria-label="Content"><div class="max-w-7xl mx-auto text-center py-16 px-4">
+  <div class="w-24 mx-auto mb-8">
+    <img src="/images/fruits-logo.svg" alt="Best Thai Fruits" />
+  </div>
+  <h1 class="h1 font-bold mb-4">Page not found</h1>
+  <p class="h3 mb-2">The requested page could not be found.</p>
+  <p class="h3 mb-8">Запрашиваемая страница не найдена.</p>
+  <a href="/" class="inline-block bg-orange text-white font-semibold py-3 px-8 rounded-lg">
+    Go to homepage / На главную
+  </a>
 </div>
 </main>
   </div>
@@ -782,6 +806,7 @@
 </div>
 <div class="pb-1 bg-orange"></div>
 
+  
   <div class="max-w-7xl mx-auto py-16">
     <div class="md:flex bg-white py-8 items-start overflow-hidden">
       <div class="px-8 mb-4 hidden md:block">
@@ -838,10 +863,12 @@
 
     </div>
   </div>
+  
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       GLightbox({ selector: ".glightbox" });
     });
   </script>
+  </body>
 </html>

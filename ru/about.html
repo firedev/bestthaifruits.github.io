@@ -109,6 +109,9 @@
   
 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap&subset=cyrillic"
@@ -134,6 +137,7 @@
         --color-mango-puree: #fdc629;
         --color-passion-fruit: #ffa900;
         --color-avocado: #cfe602;
+        --color-franchise: #ffde51;
         --color-about: #ffffff;
         --color-navy: #3c6eae;
         --color-light-yellow: #ffeebb;
@@ -260,9 +264,14 @@
       .bg-pineapple-stick-img {
         background-image: url(/images/pineapple-stick.jpg);
       }
+      .bg-franchise-img {
+        background-image: url(/images/franchise/slide-01.jpg);
+      }
       .bg-about-img {
         background-image: url(/images/fruits-logo.png);
         background-size: contain !important;
+        background-repeat: no-repeat;
+        background-position: center;
       }
 
       /* Special components */
@@ -315,17 +324,9 @@
         background-color: var(--nav-color, #fff);
       }
 
-      /* Product card hover */
-      .product-card {
-        transition: transform 0.2s, box-shadow 0.2s;
-      }
-      .product-card:hover {
-        transform: scale(1.02);
-        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-        z-index: 1;
-      }
     </style>
   </head>
+  <body>
   <div class="mx-auto relative">
     <div class="absolute right-0 p-2">
 <nav>
@@ -430,6 +431,35 @@
         
           
           <a
+            href="/ru/franchise"
+            style="--nav-color: var(--color-franchise)"
+            class="nav-link text-center uppercase font-semibold px-3 md:px-4 py-3 text-white
+                   "
+          >
+            Смузярня
+          </a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+          <a
             href="/ru/mango"
             style="--nav-color: var(--color-mango)"
             class="nav-link text-center uppercase font-semibold px-3 md:px-4 py-3 text-white
@@ -456,6 +486,8 @@
           
         
           
+        
+          
           <a
             href="/ru/mango-puree"
             style="--nav-color: var(--color-mango-puree)"
@@ -477,6 +509,8 @@
           
         
       
+        
+          
         
           
         
@@ -510,6 +544,8 @@
           
         
           
+        
+          
           <a
             href="/ru/pineapple-stick"
             style="--nav-color: var(--color-pineapple-stick)"
@@ -527,6 +563,8 @@
           
         
       
+        
+          
         
           
         
@@ -564,6 +602,8 @@
           
         
           
+        
+          
           <a
             href="/ru/passion-fruit"
             style="--nav-color: var(--color-passion-fruit)"
@@ -577,6 +617,8 @@
           
         
       
+        
+          
         
           
         
@@ -706,8 +748,7 @@
                 
                 
                 <a href="/images/about/about-1.jpeg" class="glightbox block w-1/2 md:w-1/3 lg:w-1/4">
-                    <div class="ratio-1x1 bg-cover bg-center" style="line-height: 0; background-image: url(/images/about/about-1.jpeg)">
-                    </div>
+                    <img src="/images/about/about-1.jpeg" alt="about-1" loading="lazy" class="w-full aspect-square object-cover object-top" />
                 </a>
             
         
@@ -718,8 +759,7 @@
                 
                 
                 <a href="/images/about/about-2.jpeg" class="glightbox block w-1/2 md:w-1/3 lg:w-1/4">
-                    <div class="ratio-1x1 bg-cover bg-center" style="line-height: 0; background-image: url(/images/about/about-2.jpeg)">
-                    </div>
+                    <img src="/images/about/about-2.jpeg" alt="about-2" loading="lazy" class="w-full aspect-square object-cover object-top" />
                 </a>
             
         
@@ -730,8 +770,7 @@
                 
                 
                 <a href="/images/about/about-3.jpg" class="glightbox block w-1/2 md:w-1/3 lg:w-1/4">
-                    <div class="ratio-1x1 bg-cover bg-center" style="line-height: 0; background-image: url(/images/about/about-3.jpg)">
-                    </div>
+                    <img src="/images/about/about-3.jpg" alt="about-3" loading="lazy" class="w-full aspect-square object-cover object-top" />
                 </a>
             
         
@@ -742,8 +781,7 @@
                 
                 
                 <a href="/images/about/about-4.jpg" class="glightbox block w-1/2 md:w-1/3 lg:w-1/4">
-                    <div class="ratio-1x1 bg-cover bg-center" style="line-height: 0; background-image: url(/images/about/about-4.jpg)">
-                    </div>
+                    <img src="/images/about/about-4.jpg" alt="about-4" loading="lazy" class="w-full aspect-square object-cover object-top" />
                 </a>
             
         
@@ -754,8 +792,7 @@
                 
                 
                 <a href="/images/about/about-5.jpeg" class="glightbox block w-1/2 md:w-1/3 lg:w-1/4">
-                    <div class="ratio-1x1 bg-cover bg-center" style="line-height: 0; background-image: url(/images/about/about-5.jpeg)">
-                    </div>
+                    <img src="/images/about/about-5.jpeg" alt="about-5" loading="lazy" class="w-full aspect-square object-cover object-top" />
                 </a>
             
         
@@ -766,8 +803,7 @@
                 
                 
                 <a href="/images/about/about-6.jpeg" class="glightbox block w-1/2 md:w-1/3 lg:w-1/4">
-                    <div class="ratio-1x1 bg-cover bg-center" style="line-height: 0; background-image: url(/images/about/about-6.jpeg)">
-                    </div>
+                    <img src="/images/about/about-6.jpeg" alt="about-6" loading="lazy" class="w-full aspect-square object-cover object-top" />
                 </a>
             
         
@@ -778,10 +814,41 @@
                 
                 
                 <a href="/images/about/about-7.jpeg" class="glightbox block w-1/2 md:w-1/3 lg:w-1/4">
-                    <div class="ratio-1x1 bg-cover bg-center" style="line-height: 0; background-image: url(/images/about/about-7.jpeg)">
-                    </div>
+                    <img src="/images/about/about-7.jpeg" alt="about-7" loading="lazy" class="w-full aspect-square object-cover object-top" />
                 </a>
             
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
         
     
         
@@ -1240,66 +1307,12 @@
 </div>
 <div class="pb-1 bg-orange"></div>
 
-  <div class="max-w-7xl mx-auto py-16">
-    <div class="md:flex bg-white py-8 items-start overflow-hidden">
-      <div class="px-8 mb-4 hidden md:block">
-        <div style="width: 9rem">
-          <img src="/images/logo/en.svg" class="block" />
-        </div>
-      </div>
-      <div class="flex-1">
   
-  <div class="md:flex flex-1 flex-wrap px-2 items-start h3 py-4 mb-4">
-    <div class="flex-1 items-end px-2 mb-4">
-      <div class="flex items-start">
-        <div class="pt-1 mr-2">
-          <i class="h1 fas fa-map-marker-alt text-brand"></i>
-        </div>
-        <div>
-          <small class="absolute -mt-8 pt-2 whitespace-nowrap"></small>
-          <div class="whitespace-nowrap">
-             <span class="font-extrabold">Best Thai Fruit</span> Co. Ltd.
-          </div>
-          53/36 Moo 2, Vichit, Muang, Phuket, Thailand 83000
-          <div class="mb-2"></div>
-          <div class="flex items-center">
-            <a class="text-whatsapp" href="https://wa.me/79604929263?text=bestthaifruits.com"><i
-                class="mr-2 h2 icon fab fa-whatsapp-square"></i></a>
-            
-            <a class="text-line" href="line://ti/p/bestthaifruits"><i class=" mr-2 h2 icon fab fa-line"></i></a>
-            
-            <a class="text-instagram flex items-center" href="https://www.instagram.com/bestthaifruits/"><i
-                class="h2 icon fab fa-instagram mr-1"></i> bestthaifruits</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="flex-1 items-end mb-4 px-2">
-      <div class="mb-4">
-        <div>
-          <a class="text-black flex items-center" href="tel:+668-0707-3842"><i
-              class="h2 mr-2 text-brand fa fa-phone-square-alt"></i> +668-0707-3842</a>
-        </div>
-        
-        <div>
-          <a class="text-black flex items-center" href="mailto:info@bestthaifruits.com"><i
-              class="h2 mr-2 text-brand fa fa-envelope-square"></i> info@bestthaifruits.com</a>
-        </div>
-
-      </div>
-      
-    </div>
-
-  </div>
-  
-</div>
-
-    </div>
-  </div>
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       GLightbox({ selector: ".glightbox" });
     });
   </script>
+  </body>
 </html>

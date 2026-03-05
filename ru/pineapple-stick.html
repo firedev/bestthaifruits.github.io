@@ -109,6 +109,9 @@
   
 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap&subset=cyrillic"
@@ -134,6 +137,7 @@
         --color-mango-puree: #fdc629;
         --color-passion-fruit: #ffa900;
         --color-avocado: #cfe602;
+        --color-franchise: #ffde51;
         --color-about: #ffffff;
         --color-navy: #3c6eae;
         --color-light-yellow: #ffeebb;
@@ -260,9 +264,14 @@
       .bg-pineapple-stick-img {
         background-image: url(/images/pineapple-stick.jpg);
       }
+      .bg-franchise-img {
+        background-image: url(/images/franchise/slide-01.jpg);
+      }
       .bg-about-img {
         background-image: url(/images/fruits-logo.png);
         background-size: contain !important;
+        background-repeat: no-repeat;
+        background-position: center;
       }
 
       /* Special components */
@@ -315,17 +324,9 @@
         background-color: var(--nav-color, #fff);
       }
 
-      /* Product card hover */
-      .product-card {
-        transition: transform 0.2s, box-shadow 0.2s;
-      }
-      .product-card:hover {
-        transform: scale(1.02);
-        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-        z-index: 1;
-      }
     </style>
   </head>
+  <body>
   <div class="mx-auto relative">
     <div class="absolute right-0 p-2">
 <nav>
@@ -430,6 +431,35 @@
         
           
           <a
+            href="/ru/franchise"
+            style="--nav-color: var(--color-franchise)"
+            class="nav-link text-center uppercase font-semibold px-3 md:px-4 py-3 text-white
+                   "
+          >
+            Смузярня
+          </a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+          <a
             href="/ru/mango"
             style="--nav-color: var(--color-mango)"
             class="nav-link text-center uppercase font-semibold px-3 md:px-4 py-3 text-white
@@ -452,6 +482,8 @@
           
         
       
+        
+          
         
           
         
@@ -483,6 +515,8 @@
           
         
           
+        
+          
           <a
             href="/ru/mango-stick"
             style="--nav-color: var(--color-mango-stick)"
@@ -502,6 +536,8 @@
           
         
       
+        
+          
         
           
         
@@ -537,6 +573,8 @@
           
         
           
+        
+          
           <a
             href="/ru/pineapple"
             style="--nav-color: var(--color-pineapple)"
@@ -552,6 +590,8 @@
           
         
       
+        
+          
         
           
         
@@ -591,6 +631,8 @@
           
         
           
+        
+          
           <a
             href="/ru/about"
             style="--nav-color: var(--color-about)"
@@ -606,6 +648,8 @@
   </nav>
   <div class="mx-auto">
     <main class="page-content" aria-label="Content"><div class="pineapple-stick relative mx-auto bg-white bg-pineapple-stick-img bg-cover bg-center">
+  <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-transparent"></div>
+  <div class="relative">
   <div class="hidden lg:block pt-16"></div>
   <div class="max-w-7xl mx-auto">
     <div class="px-4 md:px-16 py-8 relative">
@@ -657,6 +701,7 @@
       <div class="hidden md:block h3 text-center pt-1">
         <span class="p-1 bg-pineapple-stick">
           Пищевая ценность в 100г
+        </span>
       </div>
       <div class="py-4 flex flex-wrap justify-center mx-auto">
         <div class="p-1">
@@ -705,6 +750,7 @@
     <div class="hidden lg:block pb-16 pt-16"></div>
   </div>
   <div class="shadow-up"></div>
+  </div>
 </div>
 
 <div class="flex max-w-7xl mx-auto">
@@ -794,10 +840,10 @@ Freezing). Готовы к употреблению после вскрытия 
       class="block rounded-lg h3 bg-orange text-white py-2 px-8 inline-flex items-center">
       <i class="fa h1 pr-4 fa-cloud-download-alt"></i>
       Frozen Thai Mango on a Stick</a>
-  <a href="/media/Frozen Thai Mini Pianepple Phule.pdf" title="Frozen Thai Mini Pianepple Phule.pdf"
+  <a href="/media/Frozen Thai Mini Pineapple Phule.pdf" title="Frozen Thai Mini Pineapple Phule.pdf"
       class="block rounded-lg h3 bg-orange text-white py-2 px-8 inline-flex items-center">
       <i class="fa h1 pr-4 fa-cloud-download-alt"></i>
-      Frozen Thai Mini Pianepple Phule</a>
+      Frozen Thai Mini Pineapple Phule</a>
   <a href="/media/Frozen Thai Passion Fruit.pdf" title="Frozen Thai Passion Fruit.pdf"
       class="block rounded-lg h3 bg-orange text-white py-2 px-8 inline-flex items-center">
       <i class="fa h1 pr-4 fa-cloud-download-alt"></i>
@@ -1014,13 +1060,40 @@ Freezing). Готовы к употреблению после вскрытия 
         
     
         
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
             
                 
                 
                 
                 <a href="/images/pineapple-stick/pineapple.7.jpg" class="glightbox block w-1/2 md:w-1/3 lg:w-1/4">
-                    <div class="ratio-1x1 bg-cover bg-center" style="line-height: 0; background-image: url(/images/pineapple-stick/pineapple.7.jpg)">
-                    </div>
+                    <img src="/images/pineapple-stick/pineapple.7.jpg" alt="pineapple.7" loading="lazy" class="w-full aspect-square object-cover object-top" />
                 </a>
             
         
@@ -1031,8 +1104,7 @@ Freezing). Готовы к употреблению после вскрытия 
                 
                 
                 <a href="/images/pineapple-stick/pineapple_1.jpg" class="glightbox block w-1/2 md:w-1/3 lg:w-1/4">
-                    <div class="ratio-1x1 bg-cover bg-center" style="line-height: 0; background-image: url(/images/pineapple-stick/pineapple_1.jpg)">
-                    </div>
+                    <img src="/images/pineapple-stick/pineapple_1.jpg" alt="pineapple_1" loading="lazy" class="w-full aspect-square object-cover object-top" />
                 </a>
             
         
@@ -1043,8 +1115,7 @@ Freezing). Готовы к употреблению после вскрытия 
                 
                 
                 <a href="/images/pineapple-stick/pineapple_2.jpg" class="glightbox block w-1/2 md:w-1/3 lg:w-1/4">
-                    <div class="ratio-1x1 bg-cover bg-center" style="line-height: 0; background-image: url(/images/pineapple-stick/pineapple_2.jpg)">
-                    </div>
+                    <img src="/images/pineapple-stick/pineapple_2.jpg" alt="pineapple_2" loading="lazy" class="w-full aspect-square object-cover object-top" />
                 </a>
             
         
@@ -1055,8 +1126,7 @@ Freezing). Готовы к употреблению после вскрытия 
                 
                 
                 <a href="/images/pineapple-stick/pineapple_3.jpg" class="glightbox block w-1/2 md:w-1/3 lg:w-1/4">
-                    <div class="ratio-1x1 bg-cover bg-center" style="line-height: 0; background-image: url(/images/pineapple-stick/pineapple_3.jpg)">
-                    </div>
+                    <img src="/images/pineapple-stick/pineapple_3.jpg" alt="pineapple_3" loading="lazy" class="w-full aspect-square object-cover object-top" />
                 </a>
             
         
@@ -1067,8 +1137,7 @@ Freezing). Готовы к употреблению после вскрытия 
                 
                 
                 <a href="/images/pineapple-stick/pineapple_4.jpg" class="glightbox block w-1/2 md:w-1/3 lg:w-1/4">
-                    <div class="ratio-1x1 bg-cover bg-center" style="line-height: 0; background-image: url(/images/pineapple-stick/pineapple_4.jpg)">
-                    </div>
+                    <img src="/images/pineapple-stick/pineapple_4.jpg" alt="pineapple_4" loading="lazy" class="w-full aspect-square object-cover object-top" />
                 </a>
             
         
@@ -1079,8 +1148,7 @@ Freezing). Готовы к употреблению после вскрытия 
                 
                 
                 <a href="/images/pineapple-stick/pineapple_5.jpg" class="glightbox block w-1/2 md:w-1/3 lg:w-1/4">
-                    <div class="ratio-1x1 bg-cover bg-center" style="line-height: 0; background-image: url(/images/pineapple-stick/pineapple_5.jpg)">
-                    </div>
+                    <img src="/images/pineapple-stick/pineapple_5.jpg" alt="pineapple_5" loading="lazy" class="w-full aspect-square object-cover object-top" />
                 </a>
             
         
@@ -1091,10 +1159,13 @@ Freezing). Готовы к употреблению после вскрытия 
                 
                 
                 <a href="/images/pineapple-stick/pineapple_6.jpg" class="glightbox block w-1/2 md:w-1/3 lg:w-1/4">
-                    <div class="ratio-1x1 bg-cover bg-center" style="line-height: 0; background-image: url(/images/pineapple-stick/pineapple_6.jpg)">
-                    </div>
+                    <img src="/images/pineapple-stick/pineapple_6.jpg" alt="pineapple_6" loading="lazy" class="w-full aspect-square object-cover object-top" />
                 </a>
             
+        
+    
+        
+    
         
     
         
@@ -1371,6 +1442,7 @@ Freezing). Готовы к употреблению после вскрытия 
 </div>
 <div class="pb-1 bg-orange"></div>
 
+  
   <div class="max-w-7xl mx-auto py-16">
     <div class="md:flex bg-white py-8 items-start overflow-hidden">
       <div class="px-8 mb-4 hidden md:block">
@@ -1427,10 +1499,12 @@ Freezing). Готовы к употреблению после вскрытия 
 
     </div>
   </div>
+  
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       GLightbox({ selector: ".glightbox" });
     });
   </script>
+  </body>
 </html>
