@@ -8,8 +8,7 @@
                 {% assign filename = filenameparts | last | replace: file.extname,"" %}
                 {% assign img = file.path | relative_url %}
                 <a href="{{img}}" class="glightbox block w-1/2 md:w-1/3 lg:w-1/4">
-                    <div class="ratio-1x1 bg-cover bg-center" style="line-height: 0; background-image: url({{img}})">
-                    </div>
+                    <img src="{{img}}" alt="{{filename}}" loading="lazy" class="w-full aspect-square object-cover object-top" />
                 </a>
             {% endif %}
         {% endif %}

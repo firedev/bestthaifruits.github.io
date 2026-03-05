@@ -3,6 +3,8 @@ layout: default
 ---
 
 <div class="{{page.slug}} relative mx-auto bg-white bg-{{page.slug}}-img bg-cover bg-center">
+  <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-transparent"></div>
+  <div class="relative">
   <div class="hidden lg:block pt-16"></div>
   <div class="max-w-7xl mx-auto">
     <div class="px-4 md:px-16 py-8 relative">
@@ -30,6 +32,7 @@ layout: default
       <div class="hidden md:block h3 text-center pt-1">
         <span class="p-1 bg-{{page.slug}}">
           {{ site.t[page.lang].nutrition.info }}
+        </span>
       </div>
       <div class="py-4 flex flex-wrap justify-center mx-auto">
         <div class="p-1">
@@ -78,6 +81,7 @@ layout: default
     <div class="hidden lg:block pb-16 pt-16"></div>
   </div>
   <div class="shadow-up"></div>
+  </div>
 </div>
 
 <div class="flex max-w-7xl mx-auto">

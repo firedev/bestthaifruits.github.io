@@ -6,7 +6,9 @@ slug: mango
 title: Thai Mango Slices
 subtitle: The most delicious variety Nam Dok Mai
 description: >-
-  Premium Ripe Individually Quick Frozen Thai Mango Nam Dok Mai
+  Premium Ripe Individually Quick Frozen Thai Mango Nam Dok Mai. Peeled and pitted halves, ready to eat after thawing.
+image: /images/mango/mango_1.jpg
+keywords: frozen Thai mango, Nam Dok Mai mango, IQF mango slices, frozen mango halves, premium Thai mango, buy frozen mango, tropical fruit delivery
 permalink: /mango
 nutrition:
   kcal: 65

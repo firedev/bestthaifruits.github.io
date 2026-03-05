@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign t = site.t[page.lang] %}
-{% assign pages = site.pages | where: "lang", page.lang | where: "hide", nil %}
+{% assign pages = site.pages | where: "lang", page.lang | where: "hide", nil | sort: "position" %}
 <div class="max-w-7xl bg-white mx-auto text-center p-4 md:hidden">
   <div class="h1 font-bold uppercase">
     {{ t.layout.title }}
@@ -14,7 +14,9 @@ layout: default
 
 <div class="md:flex mx-auto bg-white relative flex-wrap justify-center">
   {% for p in pages %}
-  <a href="{{ p.permalink }}" class="product-card block text-black md:w-1/2 lg:w-1/3 px-8 py-16 bg-{{p.slug}}-img bg-cover bg-center relative overflow-hidden">
+  <a href="{{ p.permalink }}" class="product-card block text-black md:w-1/2 lg:w-1/3 {% if p.slug == 'about' or p.slug == 'franchise' %}lg:w-full{% endif %} bg-{{p.slug}}-img bg-cover bg-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+    <div class="relative px-8 py-16">
     <div class="hidden lg:block pt-16"></div>
     <div class="h1 squeeze"><span class="bg-{{p.slug}} px-1 font-bold uppercase">{{ p.title }}</span></div>
     {% if p.subtitle %}
@@ -23,6 +25,7 @@ layout: default
     {% include unavailable.html %}
     <div class="py-16"></div>
     <div class="hidden lg:block pb-16"></div>
+    </div>
   </a>
   {% endfor %}
 </div>

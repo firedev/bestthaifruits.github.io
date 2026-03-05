@@ -5,6 +5,9 @@ permalink: /about
 layout: about
 title: About us
 slug: about
+description: >-
+  Best Thai Fruit Co. Ltd. — leading manufacturer and exporter of premium IQF frozen fruits in Thailand. Phuket-based, delivering worldwide.
+keywords: Best Thai Fruits, frozen fruit manufacturer Thailand, IQF frozen fruit exporter, premium Thai fruit company, Phuket fruit export
 ---
 
 {: .extrabold.squeeze }

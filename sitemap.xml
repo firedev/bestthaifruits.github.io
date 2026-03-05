@@ -1,0 +1,39 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {% assign en_pages = site.pages | where: "lang", "en" %}
+  {% assign ru_pages = site.pages | where: "lang", "ru" %}
+  {% for page in en_pages %}
+  {% if page.permalink %}
+  <url>
+    <loc>{{ site.url }}{{ page.permalink }}</loc>
+    {% for ru_page in ru_pages %}
+      {% if ru_page.slug == page.slug %}
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.permalink }}" />
+    <xhtml:link rel="alternate" hreflang="ru" href="{{ site.url }}{{ ru_page.permalink }}" />
+      {% endif %}
+    {% endfor %}
+    <changefreq>monthly</changefreq>
+    <priority>{% if page.permalink == '/' %}1.0{% elsif page.layout == 'fruit' %}0.8{% else %}0.6{% endif %}</priority>
+  </url>
+  {% endif %}
+  {% endfor %}
+  {% for page in ru_pages %}
+  {% if page.permalink %}
+  <url>
+    <loc>{{ site.url }}{{ page.permalink }}</loc>
+    {% for en_page in en_pages %}
+      {% if en_page.slug == page.slug %}
+    <xhtml:link rel="alternate" hreflang="ru" href="{{ site.url }}{{ page.permalink }}" />
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ en_page.permalink }}" />
+      {% endif %}
+    {% endfor %}
+    <changefreq>monthly</changefreq>
+    <priority>{% if page.permalink == '/ru' %}1.0{% elsif page.layout == 'fruit' %}0.8{% else %}0.6{% endif %}</priority>
+  </url>
+  {% endif %}
+  {% endfor %}
+</urlset>

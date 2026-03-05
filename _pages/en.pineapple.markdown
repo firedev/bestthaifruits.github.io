@@ -6,7 +6,9 @@ slug: pineapple
 title: Mini Pineapple
 subtitle: The King of Tropical Fruits
 description: >-
-  Premium Ripe Individually Quick Frozen Thai Mini-Pineapple
+  Premium Ripe Individually Quick Frozen Thai Mini-Pineapple Phulae. Sweet, juicy and ready to eat. Delivered worldwide.
+image: /images/pineapple/pineapple_1.jpg
+keywords: frozen pineapple, Thai mini pineapple, Phulae pineapple, IQF pineapple, frozen tropical fruit, premium frozen fruit Thailand, buy frozen pineapple
 permalink: /pineapple
 nutrition:
   kcal: 50

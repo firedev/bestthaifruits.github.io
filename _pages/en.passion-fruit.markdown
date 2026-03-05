@@ -6,7 +6,9 @@ slug: passion-fruit
 title: Passion Fruit
 subtitle: Tropical Pulp Fiction
 description: >-
-  Premium Frozen Thai Passion Fruit Pulp
+  Premium Frozen Thai Passion Fruit Pulp. 100% natural, no sugar or preservatives. Perfect for desserts, cocktails and smoothies.
+image: /images/passion-fruit/passion-fruit_1.jpg
+keywords: frozen passion fruit pulp, Thai passion fruit, passion fruit puree, IQF passion fruit, frozen tropical fruit, passion fruit for desserts, buy passion fruit pulp
 permalink: /passion-fruit
 nutrition:
   kcal: 97

@@ -6,7 +6,9 @@ slug: mango-stick
 title: Mango on a&nbsp;Stick
 subtitle: Is Better than Ice Cream
 description: >-
-  Premium ripe frozen Thai Mango on a Stick
+  Premium Frozen Thai Mango on a Stick. Natural ice cream from a whole pitted half of ripe Nam Dok Mai mango. Healthy dessert.
+image: /images/mango/mango_1.jpg
+keywords: mango on a stick, frozen mango stick, Thai mango ice cream, natural frozen dessert, Nam Dok Mai mango, healthy ice cream alternative, frozen fruit snack
 permalink: /mango-stick
 nutrition:
   kcal: 65

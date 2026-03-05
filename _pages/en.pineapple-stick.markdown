@@ -6,7 +6,9 @@ slug: pineapple-stick
 title: Mini Pineapple on a Stick
 subtitle: The King of Tropical Fruits
 description: >-
-  Each pineapple is peeled and put on a wooden stick
+  Premium Frozen Thai Mini Pineapple on a Stick. Peeled Phulae pineapple, IQF frozen, ready to eat. Natural healthy snack.
+image: /images/pineapple-stick/pineapple_4.jpg
+keywords: pineapple on a stick, frozen pineapple stick, Thai mini pineapple, Phulae pineapple, IQF frozen fruit, healthy frozen snack, tropical fruit on stick
 permalink: /pineapple-stick
 nutrition:
   kcal: 50

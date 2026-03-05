@@ -28,10 +28,17 @@
     <meta property="og:site_name" content="{{ t.title }}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{site.url}}{{page.permalink}}" />
-    <meta property="og:image" content="{{site.url}}/images/16x9.png" />
+    <meta property="og:image" content="{{site.url}}{{ page.image | default: '/images/16x9.png' }}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{page.title | default: t.title }}" />
+    <meta name="twitter:description" content="{{ page.description | default: t.description }}" />
+    <meta name="twitter:image" content="{{site.url}}{{ page.image | default: '/images/16x9.png' }}" />
     <title>
       {% if page.title != empty %}{{ page.title }} | {% endif %}{{ t.title }}
     </title>
+    <link rel="canonical" href="{{site.url}}{{page.permalink | default: page.url}}" />
     <meta
       name="google-site-verification"
       content="f-YEKvNR-QK5_3QE44BbQeOhW_QQA9Z2jwDklmw7Hds"
@@ -41,7 +48,11 @@
       name="description"
       content="{{ page.description | default: t.description }}"
     />
+    {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}" />{% endif %}
     {% include alternate.html %}
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap&subset=cyrillic"
@@ -67,6 +78,7 @@
         --color-mango-puree: #fdc629;
         --color-passion-fruit: #ffa900;
         --color-avocado: #cfe602;
+        --color-franchise: #ffde51;
         --color-about: #ffffff;
         --color-navy: #3c6eae;
         --color-light-yellow: #ffeebb;
@@ -193,9 +205,14 @@
       .bg-pineapple-stick-img {
         background-image: url(/images/pineapple-stick.jpg);
       }
+      .bg-franchise-img {
+        background-image: url(/images/franchise/slide-01.jpg);
+      }
       .bg-about-img {
         background-image: url(/images/fruits-logo.png);
         background-size: contain !important;
+        background-repeat: no-repeat;
+        background-position: center;
       }
 
       /* Special components */
@@ -248,17 +265,62 @@
         background-color: var(--nav-color, #fff);
       }
 
-      /* Product card hover */
-      .product-card {
-        transition: transform 0.2s, box-shadow 0.2s;
-      }
-      .product-card:hover {
-        transform: scale(1.02);
-        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-        z-index: 1;
-      }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Best Thai Fruits",
+      "url": "https://bestthaifruits.com",
+      "logo": "https://bestthaifruits.com/images/fruits-logo.svg",
+      "description": "{{ t.description | strip_newlines }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "53/36 Moo 2, Vichit, Muang",
+        "addressLocality": "Phuket",
+        "addressCountry": "TH",
+        "postalCode": "83000"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+668-0707-3842",
+        "email": "info@bestthaifruits.com",
+        "contactType": "sales"
+      }
+    }
+    </script>
+    {% if page.layout == 'fruit' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "{{ page.title }}",
+      "description": "{{ page.description }}",
+      "image": "{{site.url}}{{ page.image | default: '/images/16x9.png' }}",
+      "brand": {
+        "@type": "Brand",
+        "name": "Best Thai Fruits"
+      },
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "Best Thai Fruit Co. Ltd."
+      },
+      "countryOfOrigin": {
+        "@type": "Country",
+        "name": "Thailand"
+      }{% if page.nutrition %},
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "{{ page.nutrition.kcal }} kCal",
+        "fatContent": "{{ page.nutrition.fat }} g",
+        "proteinContent": "{{ page.nutrition.protein }} g",
+        "carbohydrateContent": "{{ page.nutrition.carbs }} g"
+      }{% endif %}
+    }
+    </script>
+    {% endif %}
   </head>
+  <body>
   <div class="mx-auto relative">
     <div class="absolute right-0 p-2">{% include lang_nav.html %}</div>
   </div>
@@ -283,7 +345,7 @@
   </a>
   <nav class="bg-neutral-800">
     {% assign all_pages = site.pages | where: "lang", page.lang | where: "hide", nil %}
-    {% assign nav_slugs = "mango,mango-puree,mango-stick,pineapple-stick,pineapple,passion-fruit,about" | split: "," %}
+    {% assign nav_slugs = "franchise,mango,mango-puree,mango-stick,pineapple-stick,pineapple,passion-fruit,about" | split: "," %}
     <div class="flex flex-wrap justify-center gap-1 mx-auto px-2">
       {% for slug in nav_slugs %}
         {% for p in all_pages %}
@@ -305,6 +367,7 @@
     <main class="page-content" aria-label="Content">{{ content }}</main>
   </div>
   {% include partners.html %}
+  {% unless page.layout == "about" %}
   <div class="max-w-7xl mx-auto py-16">
     <div class="md:flex bg-white py-8 items-start overflow-hidden">
       <div class="px-8 mb-4 hidden md:block">
@@ -315,10 +378,12 @@
       {% include company.html %}
     </div>
   </div>
+  {% endunless %}
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       GLightbox({ selector: ".glightbox" });
     });
   </script>
+  </body>
 </html>

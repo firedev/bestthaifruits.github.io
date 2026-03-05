@@ -6,7 +6,9 @@ slug: mango-puree
 title: Mango Puree
 subtitle: Pure Mango Pulp
 description: >-
-  Premium Ripe Individually Quick Frozen Thai Mango Nam Dok Mai
+  Premium Frozen Thai Mango Puree. 100% natural Nam Dok Mai mango pulp, no additives or preservatives. IQF frozen.
+image: /images/mango-puree/mango-puree_1.jpg
+keywords: frozen mango puree, mango pulp, Thai mango puree, Nam Dok Mai mango puree, IQF mango, natural mango pulp, frozen fruit puree
 permalink: /mango-puree
 nutrition:
   kcal: 65

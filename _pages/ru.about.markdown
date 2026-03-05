@@ -5,6 +5,9 @@ permalink: /ru/about
 layout: about
 title: О нас
 slug: about
+description: >-
+  Best Thai Fruit Co. Ltd. — ведущий производитель и экспортер премиальных замороженных фруктов из Таиланда. Шоковая заморозка IQF, доставка по всему миру.
+keywords: Best Thai Fruits, производитель замороженных фруктов Таиланд, экспортер тайских фруктов, шоковая заморозка IQF, замороженные фрукты оптом
 ---
 
 {: .extrabold.squeeze }
